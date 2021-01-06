@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 //pxblue modules
-import { NgProgressIconsModule } from '@pxblue/ng-progress-icons';
 import { DrawerModule } from '@pxblue/angular-components';
 //material modules
 import { FormsModule } from '@angular/forms';
@@ -32,7 +31,6 @@ import { MatIconModule } from '@angular/material/icon';
         MatButtonModule,
         MatIconModule,
         //pxblue
-        NgProgressIconsModule,
         DrawerModule,
     ],
     providers: [],
