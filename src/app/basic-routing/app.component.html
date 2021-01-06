@@ -1,0 +1,14 @@
+<pxb-drawer-layout [variant]="getVariant()" (backdropClick)="closeDrawer()">
+    <app-drawer pxb-drawer></app-drawer>
+    <div pxb-content>
+        <mat-toolbar style="padding: 0 24px">
+            <button *ngIf="variant === 'temporary'" mat-icon-button (click)="openDrawer()">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <h2>Basic Routing Template</h2>
+        </mat-toolbar>
+        <div style="padding: 24px">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</pxb-drawer-layout>
