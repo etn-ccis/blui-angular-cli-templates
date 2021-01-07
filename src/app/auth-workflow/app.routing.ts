@@ -2,10 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AuthComponent } from './pages/auth/auth.component';
 import { PxbAuthGuard, AUTH_ROUTES, getAuthSubRoutes } from '@pxblue/angular-auth-workflow';
-import { OverviewComponent } from './pages/overview/overview.component';
-import { HomeComponent } from './pages/overview/home/home.component';
-import { PageOneComponent } from './pages/overview/page-one/page-one.component';
-import { PageTwoComponent } from './pages/overview/page-two/page-two.component';
+
+import { HomeComponent } from './pages/navigation/home/home.component';
+import { PageOneComponent } from './pages/navigation/page-one/page-one.component';
+import { PageTwoComponent } from './pages/navigation/page-two/page-two.component';
+import { NavigationComponent } from './pages/navigation/navigation.component';
 
 const authWorkflowRoutes = getAuthSubRoutes();
 const routes: Routes = [
@@ -14,7 +15,7 @@ const routes: Routes = [
     {
         path: '',
         canActivate: [PxbAuthGuard],
-        component: OverviewComponent,
+        component: NavigationComponent,
         children: [
             { path: 'home', component: HomeComponent },
             { path: 'page-one', component: PageOneComponent },

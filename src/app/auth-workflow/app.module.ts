@@ -18,22 +18,13 @@ import { AppRoutingModule } from './app.routing';
 import { AuthUIService } from './services/auth-workflow/auth-ui.service';
 import { RegisterUIService } from './services/auth-workflow/register-ui.service';
 import { AuthComponent } from './pages/auth/auth.component';
-import { HomeComponent } from './pages/overview/home/home.component';
-import { PageOneComponent } from './pages/overview/page-one/page-one.component';
-import { PageTwoComponent } from './pages/overview/page-two/page-two.component';
-import { OverviewComponent } from './pages/overview/overview.component';
-import { DrawerComponent } from './components/drawer/drawer.component';
+import { NavigationComponent } from './pages/navigation/navigation.component';
+import { HomeComponent } from './pages/navigation/home/home.component';
+import { PageOneComponent } from './pages/navigation/page-one/page-one.component';
+import { PageTwoComponent } from './pages/navigation/page-two/page-two.component';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        AuthComponent,
-        DrawerComponent,
-        HomeComponent,
-        OverviewComponent,
-        PageOneComponent,
-        PageTwoComponent,
-    ],
+    declarations: [AppComponent, AuthComponent, NavigationComponent, HomeComponent, PageOneComponent, PageTwoComponent],
     imports: [
         AppRoutingModule,
         BrowserAnimationsModule,

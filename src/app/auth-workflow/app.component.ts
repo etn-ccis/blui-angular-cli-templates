@@ -1,6 +1,7 @@
 import { ChangeDetectorRef, Component } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { PxbAuthSecurityService, SecurityContext } from '@pxblue/angular-auth-workflow';
+
 import { LocalStorageService } from './services/auth-workflow/localStorage.service';
 
 @Component({
