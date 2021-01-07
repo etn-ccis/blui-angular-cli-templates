@@ -3,6 +3,7 @@
     "version": "0.0.0",
     "scripts": {
         "ng": "ng",
+        "start:blank": "ng serve -c blank",
         "start:basic-routing": "ng serve -c basic-routing",
         "start:auth-workflow": "ng serve -c auth-workflow",
         "build": "ng build",

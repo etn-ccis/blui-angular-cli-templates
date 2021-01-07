@@ -1,8 +1,5 @@
 {
     "dependencies": [
         "@pxblue/angular-auth-workflow@^1.0.1",
-        "@pxblue/angular-components@^4.0.0",
-        "@pxblue/angular-themes@^5.2.0",
-        "@pxblue/colors@^3.0.0"
     ]
 }
