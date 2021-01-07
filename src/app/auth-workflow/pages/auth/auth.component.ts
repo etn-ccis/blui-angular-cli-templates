@@ -9,13 +9,13 @@ import { PxbAuthConfig, AUTH_ROUTES } from '@pxblue/angular-auth-workflow';
                 <pxb-login>
                     <div pxb-login-header>
                         <img
-                            src="assets/images/auth-workflow/eaton_stacked_logo.png"
+                            src="assets/auth-workflow/eaton_stacked_logo.png"
                             style="max-width: 100%; max-height: 80px;"
                         />
                     </div>
                     <div pxb-login-footer style="text-align: center;">
                         <img
-                            src="assets/images/auth-workflow/cybersecurity_certified.png"
+                            src="assets/auth-workflow/cybersecurity_certified.png"
                             style="max-width: 30%; align-self: center;"
                         />
                     </div>
@@ -26,7 +26,7 @@ import { PxbAuthConfig, AUTH_ROUTES } from '@pxblue/angular-auth-workflow';
 })
 export class AuthComponent {
     constructor(pxbAuthConfig: PxbAuthConfig) {
-        pxbAuthConfig.backgroundImage = 'assets/images/auth-workflow/background.svg';
+        pxbAuthConfig.backgroundImage = 'assets/auth-workflow/background.svg';
         pxbAuthConfig.allowDebugMode = true;
         pxbAuthConfig.showSelfRegistration = false;
 
