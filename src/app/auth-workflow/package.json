@@ -1,0 +1,30 @@
+{
+    "name": "@emclaug2/angular-template-authentication",
+    "version": "1.0.1",
+    "keywords": [
+        "angular",
+        "template",
+        "pxblue",
+        "px blue",
+        "cli",
+        "authentication",
+        "auth",
+        "workflow"
+    ],
+    "scripts": {
+        "prepack": "mkdir assets & cp -r ../../assets/auth-workflow assets"
+    },
+    "description": "Authentication template for Angular projects created with the PX Blue CLI.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pxblue/angular-cli-templates.git",
+        "directory": "auth-workflow"
+    },
+    "license": "BSD-3-Clause",
+    "engines": {
+        "node": ">=10"
+    },
+    "bugs": {
+        "url": "https://github.com/pxblue/angular-cli-templates/issues"
+    }
+}

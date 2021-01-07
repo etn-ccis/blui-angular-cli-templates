@@ -1,0 +1,25 @@
+{
+    "name": "@emclaug2/angular-template-routing",
+    "version": "1.0.0",
+    "keywords": [
+        "angular",
+        "template",
+        "pxblue",
+        "px blue",
+        "cli",
+        "routing"
+    ],
+    "description": "Routing template for Angular projects created with the PX Blue CLI.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pxblue/angular-cli-templates.git",
+        "directory": "basic-routing"
+    },
+    "license": "BSD-3-Clause",
+    "engines": {
+        "node": ">=10"
+    },
+    "bugs": {
+        "url": "https://github.com/pxblue/angular-cli-templates/issues"
+    }
+}

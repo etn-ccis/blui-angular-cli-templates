@@ -1130,6 +1130,11 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@emclaug2/angular-template-blank@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@emclaug2/angular-template-blank/-/angular-template-blank-1.0.1.tgz#87b5aa52a971cfaa356d4a8a62c8cb3d9d0b9aea"
+  integrity sha512-0Ha4em77DdXVXiPjsn0/1vzFmFn5OIoiMYK73lxVEZo22Lhk6G3VickKsL25HqrJmBXwr8zMzmEIadiUEF/KhQ==
+
 "@eslint/eslintrc@^0.2.2":
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-0.2.2.tgz#d01fc791e2fc33e88a29d6f3dc7e93d0cd784b76"

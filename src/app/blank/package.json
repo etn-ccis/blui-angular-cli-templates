@@ -1,0 +1,24 @@
+{
+    "name": "@emclaug2/angular-template-blank",
+    "version": "1.0.2",
+    "keywords": [
+        "angular",
+        "template",
+        "pxblue",
+        "px blue",
+        "cli"
+    ],
+    "description": "The base template for Angular projects created with the PX Blue CLI.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pxblue/angular-cli-templates.git",
+        "directory": "blank"
+    },
+    "license": "BSD-3-Clause",
+    "engines": {
+        "node": ">=10"
+    },
+    "bugs": {
+        "url": "https://github.com/pxblue/angular-cli-templates/issues"
+    }
+}

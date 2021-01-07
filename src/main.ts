@@ -1,8 +1,8 @@
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { AppModule as BasicRoutingModule } from './app/basic-routing/app.module';
-import { AppModule as AuthWorkflowModule } from './app/auth-workflow/app.module';
-import { AppModule as BlankModule } from './app/blank/app.module';
+import { AppModule as BasicRoutingModule } from './app/basic-routing/template/app.module';
+import { AppModule as AuthWorkflowModule } from './app/auth-workflow/template/app.module';
+import { AppModule as BlankModule } from './app/blank/template/app.module';
 import { environment } from './environments/environment';
 
 if (environment.production) {
