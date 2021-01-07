@@ -1,46 +1,31 @@
-import { Component, ViewEncapsulation } from '@angular/core';
-import { MatIconRegistry } from '@angular/material/icon';
-import { DomSanitizer } from '@angular/platform-browser';
-import * as PXBColors from '@pxblue/colors';
-import { DrawerLayoutVariantType } from '@pxblue/angular-components';
-import { DrawerStateService } from './services/drawer-state/drawer-state.service';
-import { ViewportService } from './services/viewport/viewport.service';
+import { ChangeDetectorRef, Component } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { PxbAuthSecurityService, SecurityContext } from '@pxblue/angular-auth-workflow';
+import { LocalStorageService } from './services/auth-workflow/localStorage.service';
 
 @Component({
     selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss'],
-    encapsulation: ViewEncapsulation.None,
+    template: `<router-outlet></router-outlet>`,
 })
 export class AppComponent {
-    colors: Record<string, any>;
-    variant: DrawerLayoutVariantType = 'persistent';
+    stateListener: Subscription;
 
     constructor(
-        private readonly _domSanitizer: DomSanitizer,
-        private readonly _matIconRegistry: MatIconRegistry,
-        private readonly _viewportService: ViewportService,
-        private readonly _stateService: DrawerStateService
+        private readonly _pxbSecurityService: PxbAuthSecurityService,
+        private readonly _changeDetectorRef: ChangeDetectorRef,
+        private readonly _localStorageService: LocalStorageService
     ) {
-        this.colors = PXBColors;
+        this._listenForAuthLoadingStateChanges();
     }
 
-    getVariant(): DrawerLayoutVariantType {
-        if (this.variant === 'persistent' && this._viewportService.isSmall()) {
-            this._stateService.setDrawerOpen(false);
-        } else if (this.variant === 'temporary' && !this._viewportService.isSmall()) {
-            this._stateService.setDrawerOpen(true);
-        }
-
-        this.variant = this._viewportService.isSmall() ? 'temporary' : 'persistent';
-        return this.variant;
-    }
-
-    closeDrawer(): void {
-        this._stateService.setDrawerOpen(false);
-    }
-
-    openDrawer(): void {
-        this._stateService.setDrawerOpen(true);
+    // This will listen for auth state loading changes and toggles the shared overlay loading screen.
+    private _listenForAuthLoadingStateChanges(): void {
+        this.stateListener = this._pxbSecurityService.securityStateChanges().subscribe((state: SecurityContext) => {
+            const email = state.rememberMeDetails.email;
+            const rememberMe = state.rememberMeDetails.rememberMe;
+            const isAuth = state.isAuthenticatedUser;
+            this._localStorageService.setAuthData(rememberMe ? email : undefined, isAuth);
+            this._changeDetectorRef.detectChanges();
+        });
     }
 }

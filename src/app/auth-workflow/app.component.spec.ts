@@ -3,11 +3,11 @@ import { AppComponent } from './app.component';
 import { AppModule } from './app.module';
 
 describe('AppComponent', () => {
-    beforeEach((() => {
+    beforeEach(() => {
         void TestBed.configureTestingModule({
             imports: [AppModule],
         }).compileComponents();
-    }));
+    });
 
     it('should create the app', () => {
         const fixture = TestBed.createComponent(AppComponent);

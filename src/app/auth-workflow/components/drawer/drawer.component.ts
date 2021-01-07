@@ -2,8 +2,8 @@ import { ChangeDetectorRef, Component, ViewEncapsulation } from '@angular/core';
 import * as PXBColors from '@pxblue/colors';
 import { DrawerNavItem } from '@pxblue/angular-components';
 import { Router } from '@angular/router';
-import { DrawerStateService } from '../services/drawer-state/drawer-state.service';
-import { ViewportService } from '../services/viewport/viewport.service';
+import { DrawerStateService } from '../../services/drawer-state/drawer-state.service';
+import { ViewportService } from '../../services/viewport/viewport.service';
 
 @Component({
     selector: 'app-drawer',
