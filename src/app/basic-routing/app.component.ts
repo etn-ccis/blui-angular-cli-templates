@@ -35,7 +35,6 @@ export class AppComponent {
     private _listenForRouteChanges(): void {
         this.routeListener = this._router.events.subscribe((route) => {
             if (route instanceof NavigationEnd) {
-                console.log(route.urlAfterRedirects);
                 switch (route.urlAfterRedirects) {
                     case '/home': {
                         this.toolbarTitle = 'Home';
