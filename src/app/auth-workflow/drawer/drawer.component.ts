@@ -33,9 +33,6 @@ import { ViewportService } from '../services/viewport/viewport.service';
                     </pxb-drawer-nav-item>
                 </pxb-drawer-nav-group>
             </pxb-drawer-body>
-            <pxb-drawer-footer>
-                <img src="../assets/EatonLogo.svg" width="170" style="align-self: center; padding: 16px" />
-            </pxb-drawer-footer>
         </pxb-drawer>
     `,
     encapsulation: ViewEncapsulation.None,
