@@ -13,7 +13,7 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/pxblue/angular-cli-templates.git",
-        "directory": "basic-routing"
+        "directory": "routing"
     },
     "license": "BSD-3-Clause",
     "engines": {
