@@ -1,5 +1,3 @@
 {
-    "dependencies": [
-        "@pxblue/angular-auth-workflow@^1.0.1",
-    ]
+    "dependencies": ["@pxblue/angular-auth-workflow@^1.0.1"]
 }

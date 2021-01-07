@@ -37,7 +37,9 @@ export class AuthUIService implements IPxbAuthUIService {
 
     login(email: string, password: string, rememberMe: boolean): Promise<void> {
         console.log(
-            `Performing a sample Login request with the following credentials:\n  email: ${email} \n  password: ${password} \n  rememberMe: ${rememberMe}`
+            `Performing a sample Login request with the following credentials:\n  email: ${email} \n  password: ${password} \n  rememberMe: ${String(
+                rememberMe
+            )}`
         );
         return new Promise((resolve, reject) => {
             setTimeout(() => {

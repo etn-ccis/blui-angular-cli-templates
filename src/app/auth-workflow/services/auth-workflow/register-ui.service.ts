@@ -4,7 +4,7 @@ import { IPxbRegisterUIService, PxbAuthSecurityService, PxbAuthConfig } from '@p
 import { SAMPLE_EULA } from '../../constants/sampleEula';
 import { FormControl } from '@angular/forms';
 
-export const randomFailure = () => Math.random() < 0.25;
+export const randomFailure = (): boolean => Math.random() < 0.25;
 const TIMEOUT_MS = 1500;
 @Injectable({
     providedIn: 'root',
@@ -46,11 +46,10 @@ export class RegisterUIService implements IPxbRegisterUIService {
                 }
                 if (randomFailure()) {
                     return reject();
-                } else {
-                    const eula = SAMPLE_EULA;
-                    this._pxbAuthConfig.eula = eula; // This prevents future EULA load requests.
-                    return resolve(eula);
                 }
+                const eula = SAMPLE_EULA;
+                this._pxbAuthConfig.eula = eula; // This prevents future EULA load requests.
+                return resolve(eula);
             }, TIMEOUT_MS);
         });
     }
@@ -75,17 +74,18 @@ export class RegisterUIService implements IPxbRegisterUIService {
         validationCode?: string,
         email?: string
     ): Promise<void> {
+        let valCode = validationCode;
         const urlParams = new URLSearchParams(window.location.search);
         const urlCode = urlParams.get('code');
         if (!validationCode) {
-            validationCode = urlCode;
+            valCode = urlCode;
         }
         const firstName = formControls[0]?.value;
         const lastName = formControls[1]?.value;
         const country = formControls[2]?.value;
         const phoneNumber = formControls[3]?.value;
         console.log(
-            `Performing a sample CompleteRegistration request with the following credentials:\n firstName: ${firstName}\n lastName: ${lastName}\n country: ${country}\n phoneNumber: ${phoneNumber}\n password: ${password}\n validationCode: ${validationCode}\n email: ${email}`
+            `Performing a sample CompleteRegistration request with the following credentials:\n firstName: ${firstName}\n lastName: ${lastName}\n country: ${country}\n phoneNumber: ${phoneNumber}\n password: ${password}\n validationCode: ${valCode}\n email: ${email}`
         );
         return new Promise((resolve, reject) => {
             setTimeout(() => {

@@ -19,7 +19,6 @@ export class HomeComponent {
     }
 
     logout(): void {
-        console.log('Logging a user out of the app.');
         this._pxbSecurityService.updateSecurityState({ isAuthenticatedUser: false });
         void this._router.navigate([AUTH_ROUTES.AUTH_WORKFLOW]);
     }

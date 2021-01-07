@@ -16,7 +16,8 @@ export class LocalStorageService {
     emailKey: string;
     isAuthKey: string;
 
-    constructor(@Inject('APP_NAME') APP_NAME) {
+    // eslint-disable-next-line @typescript-eslint/naming-convention
+    constructor(@Inject('APP_NAME') APP_NAME: string) {
         this.emailKey = `${APP_NAME}_REMEMBER_ME_EMAIL`;
         this.isAuthKey = `${APP_NAME}_IS_AUTH`;
     }
