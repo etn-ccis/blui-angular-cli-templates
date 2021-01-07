@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 //pxblue modules
-import { DrawerModule } from '@pxblue/angular-components';
+import { DrawerModule, EmptyStateModule } from '@pxblue/angular-components';
 //material modules
 import { FormsModule } from '@angular/forms';
 import { DrawerComponent } from './drawer/drawer.component';
@@ -32,6 +32,7 @@ import { MatIconModule } from '@angular/material/icon';
         MatIconModule,
         //pxblue
         DrawerModule,
+        EmptyStateModule,
     ],
     providers: [],
     bootstrap: [AppComponent],

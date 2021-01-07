@@ -5,6 +5,8 @@ import * as PXBColors from '@pxblue/colors';
 import { DrawerLayoutVariantType } from '@pxblue/angular-components';
 import { DrawerStateService } from './services/drawer-state/drawer-state.service';
 import { ViewportService } from './services/viewport/viewport.service';
+import { NavigationEnd, Router } from '@angular/router';
+import { Subscription } from 'rxjs';
 
 @Component({
     selector: 'app-root',
@@ -13,16 +15,46 @@ import { ViewportService } from './services/viewport/viewport.service';
     encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
+    toolbarTitle: string;
     colors: Record<string, any>;
+    routeListener: Subscription;
     variant: DrawerLayoutVariantType = 'persistent';
 
     constructor(
+        private readonly _router: Router,
         private readonly _domSanitizer: DomSanitizer,
         private readonly _matIconRegistry: MatIconRegistry,
         private readonly _viewportService: ViewportService,
         private readonly _stateService: DrawerStateService
     ) {
         this.colors = PXBColors;
+        this._listenForRouteChanges();
+    }
+
+    // Observes route changes and determines which PXB Auth page to show via route name.
+    private _listenForRouteChanges(): void {
+        this.routeListener = this._router.events.subscribe((route) => {
+            if (route instanceof NavigationEnd) {
+                console.log(route.urlAfterRedirects);
+                switch (route.urlAfterRedirects) {
+                    case '/home': {
+                        this.toolbarTitle = 'Home';
+                        break;
+                    }
+                    case '/page-one': {
+                        this.toolbarTitle = 'Page One';
+                        break;
+                    }
+                    case '/page-two': {
+                        this.toolbarTitle = 'Page Two';
+                        break;
+                    }
+                    default: {
+                        this.toolbarTitle = '';
+                    }
+                }
+            }
+        });
     }
 
     getVariant(): DrawerLayoutVariantType {

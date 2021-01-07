@@ -35,6 +35,22 @@
                         "scripts": []
                     },
                     "configurations": {
+                        "auth-workflow": {
+                          "fileReplacements": [
+                            {
+                              "replace": "src/environments/environment.ts",
+                              "with": "src/environments/environment.auth-workflow.ts"
+                            }
+                          ]
+                        },
+                      "basic-routing": {
+                        "fileReplacements": [
+                          {
+                            "replace": "src/environments/environment.ts",
+                            "with": "src/environments/environment.basic-routing.ts"
+                          }
+                        ]
+                      },
                         "production": {
                             "fileReplacements": [
                                 {
@@ -73,7 +89,13 @@
                     "configurations": {
                         "production": {
                             "browserTarget": "angular-cli-templates:build:production"
-                        }
+                        },
+                      "basic-routing": {
+                        "browserTarget": "angular-cli-templates:build:basic-routing"
+                      },
+                      "auth-workflow": {
+                        "browserTarget": "angular-cli-templates:build:auth-workflow"
+                      }
                     }
                 },
                 "extract-i18n": {

@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PageOneComponent } from './page-one.component';
+import {AppModule} from "../../app.module";
 
 describe('PageOneComponent', () => {
     let component: PageOneComponent;
@@ -8,7 +9,7 @@ describe('PageOneComponent', () => {
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [PageOneComponent],
+            imports: [AppModule],
         }).compileComponents();
     });
 
