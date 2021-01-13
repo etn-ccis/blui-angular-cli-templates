@@ -1,1 +1,75 @@
-Blank Template Here
+<div class="app-root">
+    <mat-toolbar color="primary" class="mat-elevation-z2">
+        <button *ngIf="isSmall" style="margin-left: -8px" mat-icon-button>
+            <mat-icon>menu</mat-icon>
+        </button>
+        <div [style.marginLeft.px]="isSmall ? 24 : 0">PX Blue Angular</div>
+    </mat-toolbar>
+    <div class="app-body" [style.backgroundColor]="colors.white[50]">
+        <div class="app-body-content">
+            <app-pxb-logo [color]="colors.blue[500]" [size]="100"></app-pxb-logo>
+            <div class="mat-display-3 app-title">Welcome to PX <span [style.color]="colors.blue[500]">Blue</span></div>
+            <div class="mat-h3 app-instructions">
+                Edit <strong>src/app/app.component.html</strong> and save to reload.
+            </div>
+            <mat-divider style="width: 100%; margin: 24px"></mat-divider>
+            <div fxLayout="column" fxLayoutGap="8px" fxLayout.gt-sm="row">
+                <div
+                    fxLayout="column"
+                    fxLayoutAlign="start start"
+                    fxLayoutGap="8px"
+                    style="justify-content: space-between"
+                >
+                    <a
+                        mat-button
+                        target="_blank"
+                        href="https://pxblue.github.io/development/frameworks-web/angular"
+                        class="landing-link"
+                    >
+                        Angular Getting Started Guide
+                    </a>
+                    <a mat-button target="_blank" href="https://pxblue.github.io/patterns" class="landing-link">
+                        Design Pattern Descriptions
+                    </a>
+                    <a
+                        mat-button
+                        target="_blank"
+                        href="https://pxblue-components.github.io/angular/"
+                        class="landing-link"
+                    >
+                        PX Blue Angular Component Library
+                    </a>
+                    <a mat-button target="_blank" href="https://github.com/pxblue" class="landing-link">
+                        Visit Us On Github
+                    </a>
+                </div>
+                <div
+                    fxLayout="column"
+                    fxLayoutAlign="start start"
+                    fxLayoutGap="8px"
+                    style="justify-content: space-between"
+                >
+                    <a
+                        mat-button
+                        target="_blank"
+                        href="https://github.com/pxblue/angular-design-patterns"
+                        class="landing-link"
+                    >
+                        Design Pattern Source on Github
+                    </a>
+                    <a mat-button target="_blank" href="https://pxblue.github.io/roadmap" class="landing-link">
+                        Release Roadmap
+                    </a>
+                    <a
+                        mat-button
+                        target="_blank"
+                        href="https://pxblue.github.io/community/contactus"
+                        class="landing-link"
+                    >
+                        Send Feedback or Suggestions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

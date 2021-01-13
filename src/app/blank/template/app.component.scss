@@ -1,0 +1,24 @@
+.app-root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.app-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    .app-body-content {
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .app-title {
+            margin-bottom: 16px;
+        }
+        .app-instructions {
+        }
+    }
+}
