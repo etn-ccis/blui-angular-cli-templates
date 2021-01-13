@@ -1,15 +1,24 @@
 .app-root {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
+}
+
+.app-toolbar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .app-body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    flex-grow: 1;
     width: 100%;
+    padding: 32px 64px;
+    box-sizing: border-box;
     .app-body-content {
         max-width: 600px;
         display: flex;
@@ -17,8 +26,6 @@
         align-items: center;
         .app-title {
             margin-bottom: 16px;
-        }
-        .app-instructions {
         }
     }
 }
