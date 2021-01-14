@@ -23,6 +23,8 @@ The Authentication template includes everything from the Routing template and al
 ## Screenshots
 #### Blank Template
 ![Blank Template](./images/blank.png)
+#### Routing Template
+![Routing Template](./images/routing.png)
 
 ## Usage
 You can use these templates with the PX Blue CLI (recommended):
