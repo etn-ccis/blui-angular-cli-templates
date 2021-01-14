@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { RouterModule } from '@angular/router';
 
 //pxblue modules
 import { DrawerModule, EmptyStateModule } from '@pxblue/angular-components';
@@ -12,7 +13,6 @@ import { DrawerModule, EmptyStateModule } from '@pxblue/angular-components';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { RouterModule } from '@angular/router';
 
 // app
 import { AppComponent } from './app.component';
@@ -33,15 +33,12 @@ import { DrawerComponent } from './components/drawer/drawer.component';
         FormsModule,
         RouterModule,
         FlexLayoutModule,
-        // mat
         MatToolbarModule,
         MatButtonModule,
         MatIconModule,
-        //pxblue
         DrawerModule,
         EmptyStateModule,
     ],
-    providers: [],
     bootstrap: [AppComponent],
 })
 export class AppModule {}

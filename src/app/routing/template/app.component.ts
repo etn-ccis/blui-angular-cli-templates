@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { DrawerLayoutVariantType } from '@pxblue/angular-components';
@@ -12,7 +12,6 @@ import { APP_NAV_ITEMS } from './components/drawer/drawer.component';
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
     toolbarTitle: string;

@@ -11,7 +11,6 @@ const routes: Routes = [
     { path: APP_NAV_ITEMS.page1.route, component: PageOneComponent },
     { path: APP_NAV_ITEMS.page2.route, component: PageTwoComponent },
 ];
-// configures NgModule imports and exports
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule],

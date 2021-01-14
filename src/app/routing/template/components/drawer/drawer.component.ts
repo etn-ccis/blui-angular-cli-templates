@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { DrawerStateService } from '../../services/drawer-state/drawer-state.service';
 import { ViewportService } from '../../services/viewport/viewport.service';
@@ -48,7 +48,7 @@ export const APP_NAV_ITEMS = {
                         *ngFor="let navItem of navItems"
                         [divider]="true"
                         [title]="navItem.title"
-                        [selected]="navItem.title === stateService.getSelectedItem()"
+                        [selected]="navItem.title === getSelectedItem()"
                         (select)="selectItem(navItem)"
                     >
                         <mat-icon pxb-icon>{{ navItem.icon }}</mat-icon>
@@ -57,16 +57,14 @@ export const APP_NAV_ITEMS = {
             </pxb-drawer-body>
         </pxb-drawer>
     `,
-    encapsulation: ViewEncapsulation.None,
 })
 export class DrawerComponent {
     navItems = [APP_NAV_ITEMS.home, APP_NAV_ITEMS.page1, APP_NAV_ITEMS.page2];
 
     constructor(
-        public stateService: DrawerStateService,
         private readonly _router: Router,
-        private readonly _viewportService: ViewportService,
-        private readonly _changeDetector: ChangeDetectorRef
+        private readonly _stateService: DrawerStateService,
+        private readonly _viewportService: ViewportService
     ) {}
 
     navigate(url: string): void {
@@ -74,17 +72,21 @@ export class DrawerComponent {
     }
 
     isOpen(): boolean {
-        return this.stateService.getDrawerOpen();
+        return this._stateService.getDrawerOpen();
     }
 
     selectItem(navItem: NavItem): void {
         this.navigate(navItem.route);
         if (this._viewportService.isSmall()) {
-            this.stateService.setDrawerOpen(false);
+            this._stateService.setDrawerOpen(false);
         }
     }
 
     toggleDrawerOpen(): void {
-        this.stateService.setDrawerOpen(!this.stateService.getDrawerOpen());
+        this._stateService.setDrawerOpen(!this._stateService.getDrawerOpen());
+    }
+
+    getSelectedItem(): string {
+        return this._stateService.getSelectedItem();
     }
 }
