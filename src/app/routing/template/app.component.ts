@@ -1,12 +1,12 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
-import * as PXBColors from '@pxblue/colors';
 import { DrawerLayoutVariantType } from '@pxblue/angular-components';
 import { DrawerStateService } from './services/drawer-state/drawer-state.service';
 import { ViewportService } from './services/viewport/viewport.service';
 import { NavigationEnd, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
+import { APP_NAV_ITEMS } from './components/drawer/drawer.component';
 
 @Component({
     selector: 'app-root',
@@ -16,7 +16,6 @@ import { Subscription } from 'rxjs';
 })
 export class AppComponent {
     toolbarTitle: string;
-    colors: Record<string, any>;
     routeListener: Subscription;
     variant: DrawerLayoutVariantType = 'persistent';
 
@@ -27,31 +26,37 @@ export class AppComponent {
         private readonly _viewportService: ViewportService,
         private readonly _stateService: DrawerStateService
     ) {
-        this.colors = PXBColors;
         this._listenForRouteChanges();
+    }
+
+    private _determineToolbarTitle(route: NavigationEnd): void {
+        switch (route.urlAfterRedirects) {
+            case `/${APP_NAV_ITEMS.home.route}`: {
+                this.toolbarTitle = APP_NAV_ITEMS.home.title;
+                this._stateService.setSelectedItem(APP_NAV_ITEMS.home.title);
+                break;
+            }
+            case `/${APP_NAV_ITEMS.page1.route}`: {
+                this.toolbarTitle = APP_NAV_ITEMS.page1.title;
+                this._stateService.setSelectedItem(APP_NAV_ITEMS.page1.title);
+                break;
+            }
+            case `/${APP_NAV_ITEMS.page2.route}`: {
+                this.toolbarTitle = APP_NAV_ITEMS.page2.title;
+                this._stateService.setSelectedItem(APP_NAV_ITEMS.page2.title);
+                break;
+            }
+            default: {
+                this.toolbarTitle = '';
+            }
+        }
     }
 
     // Observes route changes and determines which PXB Auth page to show via route name.
     private _listenForRouteChanges(): void {
         this.routeListener = this._router.events.subscribe((route) => {
             if (route instanceof NavigationEnd) {
-                switch (route.urlAfterRedirects) {
-                    case '/home': {
-                        this.toolbarTitle = 'Home';
-                        break;
-                    }
-                    case '/page-one': {
-                        this.toolbarTitle = 'Page One';
-                        break;
-                    }
-                    case '/page-two': {
-                        this.toolbarTitle = 'Page Two';
-                        break;
-                    }
-                    default: {
-                        this.toolbarTitle = '';
-                    }
-                }
+                this._determineToolbarTitle(route);
             }
         });
     }

@@ -1,24 +1,16 @@
 @import '~@pxblue/colors/palette.scss';
 
-.test-background-image mat-toolbar.pxb-drawer-header {
-    background-color: map-get($pxb-blue, 500);
-    background-size: cover;
-    color: white;
-}
-
 .toolbar {
     position: sticky;
-    position: -webkit-sticky; /* For macOS/iOS Safari */
-    top: 0; /* Sets the sticky toolbar to be on top */
-    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
-    background-color: map-get($pxb-blue, 500) !important;
-    color: map-get($pxb-white, 50) !important;
-    .user-menu {
-        margin-left: 8px;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0 24px;
+}
 
-        &.rtl {
-            margin-right: 8px;
-            margin-left: 0;
-        }
-    }
+.drawer-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
 }

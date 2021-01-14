@@ -6,6 +6,7 @@ import { ViewportService } from '../viewport/viewport.service';
 })
 export class DrawerStateService {
     private drawerOpen: boolean;
+    private selectedItem: string;
 
     constructor(viewportService: ViewportService) {
         this.drawerOpen = !viewportService.isSmall();
@@ -17,5 +18,13 @@ export class DrawerStateService {
 
     getDrawerOpen(): boolean {
         return this.drawerOpen;
+    }
+
+    setSelectedItem(item: string): void {
+        this.selectedItem = item;
+    }
+
+    getSelectedItem(): string {
+        return this.selectedItem;
     }
 }
