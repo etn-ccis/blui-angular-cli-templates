@@ -1,5 +1,4 @@
 import { ChangeDetectorRef, Component, ViewEncapsulation } from '@angular/core';
-import * as PXBColors from '@pxblue/colors';
 import { Router } from '@angular/router';
 import { DrawerStateService } from '../../services/drawer-state/drawer-state.service';
 import { ViewportService } from '../../services/viewport/viewport.service';
@@ -15,11 +14,13 @@ const homeNavItem: NavItem = {
     route: 'home',
     icon: 'home',
 };
+
 const pageOneNavItem: NavItem = {
     title: 'Page 1',
     route: 'page-one',
     icon: 'looks_one',
 };
+
 const pageTwoNavItem: NavItem = {
     title: 'Page 2',
     route: 'page-two',
@@ -59,7 +60,6 @@ export const APP_NAV_ITEMS = {
     encapsulation: ViewEncapsulation.None,
 })
 export class DrawerComponent {
-    colors = PXBColors;
     navItems = [APP_NAV_ITEMS.home, APP_NAV_ITEMS.page1, APP_NAV_ITEMS.page2];
 
     constructor(

@@ -2,7 +2,7 @@
     <app-drawer pxb-drawer></app-drawer>
     <div pxb-content class="drawer-content">
         <mat-toolbar class="toolbar">
-            <button *ngIf="variant === 'temporary'" mat-icon-button (click)="openDrawer()" style="margin-right: 8px">
+            <button mat-icon-button *ngIf="variant === 'temporary'" (click)="openDrawer()" style="margin-right: 8px">
                 <mat-icon>menu</mat-icon>
             </button>
             <h2>{{ toolbarTitle }}</h2>
