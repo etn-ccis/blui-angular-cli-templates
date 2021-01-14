@@ -1,27 +1,44 @@
-# AngularCliTemplates
+# Angular CLI Templates
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
+These are project templates that are used by the PX Blue CLI when starting a new PX Blue project. 
 
-## Development server
+## Available Templates
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Blank
+The Blank template provides a bare-bones application with PX Blue components and themes automatically configured and ready to use. This template is available [here](https://www.npmjs.com/package/@pxblue/angular-template-blank).
 
-## Code scaffolding
+### Routing
+The Routing template provides all of the essential PX Blue configuration as well as an `app.routing.ts` configuration and a few sample pages. It also adds a navigation Drawer to switch between several sample screens. This template is available [here](https://www.npmjs.com/package/@pxblue/angular-template-routing).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Authentication
+The Authentication template includes everything from the Routing template and also installs and configures the PX Blue [angular-auth-workflow](https://www.npmjs.com/package/@pxblue/angular-auth-workflow) package to automatically wrap the main application with functions and screens for Login, Registration, Change Password, etc. This template is available [here](https://www.npmjs.com/package/@pxblue/angular-template-authentication-typescript).
 
-## Build
+|                | placeholder landing page | navigation drawer & routing  | login & registration screens  |
+| -------------- | ------------------------ | ---------------------------- | ----------------------------- |
+| Blank          | ✅                       |                              |                               |                                
+| Routing        | ✅                       | ✅                           |                               |
+| Authentication | ✅                       | ✅                           | ✅                            |
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Screenshots
+#### Blank Template
+![Blank Template](./images/blank.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Usage
+You can use these templates with the PX Blue CLI (recommended):
 
-## Running end-to-end tests
+```sh
+npx -p @pxblue/cli pxb new angular --template=blank
+npx -p @pxblue/cli pxb new angular --template=routing
+npx -p @pxblue/cli pxb new angular --template=authentication
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Testing Locally
+If you would like to test these templates locally, you may do so by running the following command:
+```
+yarn start:blank 
+or
+yarn start:routing
+or
+yarn start:auth-workflow
+```
