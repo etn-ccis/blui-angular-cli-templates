@@ -12,7 +12,6 @@ import { APP_NAV_ITEMS, NavItem } from '../../constants/nav-items';
     styleUrls: ['./navigation.component.scss'],
 })
 export class NavigationComponent {
-
     toolbarTitle: string;
     routeListener: Subscription;
     variant: DrawerLayoutVariantType;
