@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { APP_NAV_ITEMS } from './constants/nav-items';
-import { HomeComponent } from './pages/navigation/home/home.component';
-import { PageOneComponent } from './pages/navigation/page-one/page-one.component';
-import { PageTwoComponent } from './pages/navigation/page-two/page-two.component';
+import { APP_NAV_ITEMS } from './navigation/nav-items';
+import { HomeComponent } from './pages/home/home.component';
+import { PageOneComponent } from './pages/page-one/page-one.component';
+import { PageTwoComponent } from './pages/page-two/page-two.component';
 
 const routes: Routes = [
     { path: '', redirectTo: APP_NAV_ITEMS.home.route, pathMatch: 'full' },

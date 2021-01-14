@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { DrawerLayoutVariantType } from '@pxblue/angular-components';
 import { NavigationEnd, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { ViewportService } from '../../services/viewport/viewport.service';
-import { DrawerStateService } from '../../services/drawer-state/drawer-state.service';
-import { APP_NAV_ITEMS, NavItem } from '../../constants/nav-items';
+import { ViewportService } from '../services/viewport/viewport.service';
+import { DrawerStateService } from '../services/drawer-state/drawer-state.service';
+import { APP_NAV_ITEMS, NavItem } from './nav-items';
 
 @Component({
     selector: 'app-navigation',
