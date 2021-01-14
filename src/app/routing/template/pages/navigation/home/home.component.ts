@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { blue, white } from '@pxblue/colors';
-import { ViewportService } from '../../services/viewport/viewport.service';
+import { ViewportService } from '../../../services/viewport/viewport.service';
 
 @Component({
     selector: 'app-home',

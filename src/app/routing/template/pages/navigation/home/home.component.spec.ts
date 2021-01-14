@@ -1,11 +1,11 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PageTwoComponent } from './page-two.component';
-import { AppModule } from '../../app.module';
+import { HomeComponent } from './home.component';
+import { AppModule } from '../../../app.module';
 
-describe('PageTwoComponent', () => {
-    let component: PageTwoComponent;
-    let fixture: ComponentFixture<PageTwoComponent>;
+describe('HomeComponent', () => {
+    let component: HomeComponent;
+    let fixture: ComponentFixture<HomeComponent>;
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
@@ -14,7 +14,7 @@ describe('PageTwoComponent', () => {
     });
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(PageTwoComponent);
+        fixture = TestBed.createComponent(HomeComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });

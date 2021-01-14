@@ -17,14 +17,21 @@ import { MatIconModule } from '@angular/material/icon';
 // app
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing';
-import { HomeComponent } from './pages/home/home.component';
-import { PageOneComponent } from './pages/page-one/page-one.component';
-import { PageTwoComponent } from './pages/page-two/page-two.component';
 import { PxbLogoComponent } from './components/pxb-logo/pxb-logo.component';
-import { DrawerComponent } from './components/drawer/drawer.component';
+import { NavigationComponent } from './pages/navigation/navigation.component';
+import { HomeComponent } from './pages/navigation/home/home.component';
+import { PageTwoComponent } from './pages/navigation/page-two/page-two.component';
+import { PageOneComponent } from './pages/navigation/page-one/page-one.component';
 
 @NgModule({
-    declarations: [AppComponent, DrawerComponent, HomeComponent, PageOneComponent, PageTwoComponent, PxbLogoComponent],
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        NavigationComponent,
+        PageOneComponent,
+        PageTwoComponent,
+        PxbLogoComponent,
+    ],
     imports: [
         AppRoutingModule,
         BrowserAnimationsModule,
