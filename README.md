@@ -66,7 +66,7 @@ In the `angular.json`, add the sample configuration below to correctly load your
 ```
 
 ##### 4. Update app entry point.
-Update `main.ts` to load your new template's `AppModule` when your new environment is invoked.  Your environment's `templateName` will be used here to display your template. 
+Update `main.ts` to load your new template's `AppModule` when your new environment is invoked.  Your environment's `templateName` will be used here to determine which `AppModule` to load. 
 
 
 ##### 5. Add a new `yarn start` command.
