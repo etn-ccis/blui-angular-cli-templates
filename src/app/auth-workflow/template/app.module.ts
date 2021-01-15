@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { CommonModule } from '@angular/common';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -27,7 +28,6 @@ import { PageOneComponent } from './pages/page-one/page-one.component';
 import { PageTwoComponent } from './pages/page-two/page-two.component';
 import { AuthComponent } from './pages/auth/auth.component';
 import { PxbLogoComponent } from './components/pxb-logo/pxb-logo.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { UserMenuComponent } from './navigation/user-menu/user-menu.component';
 import { AuthUIService } from './services/auth-workflow/auth-ui/auth-ui.service';
 import { RegisterUIService } from './services/auth-workflow/register-ui/register-ui.service';

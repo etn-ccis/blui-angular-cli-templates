@@ -21,7 +21,6 @@ export class LocalStorageService {
     constructor(@Inject('APP_NAME') APP_NAME: string, private readonly _pxbSecurityService: PxbAuthSecurityService) {
         this.emailKey = `${APP_NAME}_REMEMBER_ME_EMAIL`;
         this.isAuthKey = `${APP_NAME}_IS_AUTH`;
-        this._listenForAuthLoadingStateChanges();
     }
 
     readAuthData(): AuthData {
@@ -46,7 +45,7 @@ export class LocalStorageService {
     }
 
     // This will listen for auth state loading changes and toggles the shared overlay loading screen.
-    private _listenForAuthLoadingStateChanges(): void {
+    listenForAuthLoadingStateChanges(): void {
         this._pxbSecurityService.securityStateChanges().subscribe((state: SecurityContext) => {
             const email = state.rememberMeDetails.email;
             const rememberMe = state.rememberMeDetails.rememberMe;
