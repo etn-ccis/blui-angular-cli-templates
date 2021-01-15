@@ -28,7 +28,6 @@
         "@angular/platform-browser": "^11.0.6",
         "@angular/platform-browser-dynamic": "^11.0.6",
         "@angular/router": "^11.0.6",
-        "@emclaug2/angular-template-blank": "1.0.1",
         "@pxblue/angular-auth-workflow": "^1.0.1",
         "@pxblue/angular-components": "^4.0.0",
         "@pxblue/angular-themes": "^5.2.0",
