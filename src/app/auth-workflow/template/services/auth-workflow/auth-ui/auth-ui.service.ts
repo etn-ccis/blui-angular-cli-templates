@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import { Injectable } from '@angular/core';
 import { IPxbAuthUIService, PxbAuthSecurityService } from '@pxblue/angular-auth-workflow';
-import { LocalStorageService } from './localStorage.service';
+import { LocalStorageService } from '../local-storage/local-storage.service';
 
 const TIMEOUT_MS = 1500;
 
