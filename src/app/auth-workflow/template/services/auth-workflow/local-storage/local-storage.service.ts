@@ -1,4 +1,5 @@
 import { Inject, Injectable } from '@angular/core';
+import { PxbAuthSecurityService, SecurityContext } from '@pxblue/angular-auth-workflow';
 
 export type AuthData = {
     email: string;
@@ -17,7 +18,7 @@ export class LocalStorageService {
     isAuthKey: string;
 
     // eslint-disable-next-line @typescript-eslint/naming-convention
-    constructor(@Inject('APP_NAME') APP_NAME: string) {
+    constructor(@Inject('APP_NAME') APP_NAME: string, private readonly _pxbSecurityService: PxbAuthSecurityService) {
         this.emailKey = `${APP_NAME}_REMEMBER_ME_EMAIL`;
         this.isAuthKey = `${APP_NAME}_IS_AUTH`;
     }
@@ -41,5 +42,15 @@ export class LocalStorageService {
         } else {
             window.localStorage.removeItem(this.isAuthKey);
         }
+    }
+
+    // This will listen for auth state loading changes and toggles the shared overlay loading screen.
+    listenForAuthLoadingStateChanges(): void {
+        this._pxbSecurityService.securityStateChanges().subscribe((state: SecurityContext) => {
+            const email = state.rememberMeDetails.email;
+            const rememberMe = state.rememberMeDetails.rememberMe;
+            const isAuth = state.isAuthenticatedUser;
+            this.setAuthData(rememberMe ? email : undefined, isAuth);
+        });
     }
 }

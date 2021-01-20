@@ -1,14 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PageTwoComponent } from './page-two.component';
-import { AppModule } from '../../../app.module';
+import { AppModule } from '../../app.module';
 
 describe('PageTwoComponent', () => {
     let component: PageTwoComponent;
     let fixture: ComponentFixture<PageTwoComponent>;
 
     beforeEach(async () => {
-        await TestBed.configureTestingModule({ imports: [AppModule] }).compileComponents();
+        await TestBed.configureTestingModule({
+            imports: [AppModule],
+        }).compileComponents();
     });
 
     beforeEach(() => {

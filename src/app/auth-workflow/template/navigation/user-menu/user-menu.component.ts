@@ -1,20 +1,23 @@
 import { Component } from '@angular/core';
+import { AUTH_ROUTES, PxbAuthSecurityService, PxbChangePasswordDialogService } from '@pxblue/angular-auth-workflow';
 import { Router } from '@angular/router';
-import { PxbChangePasswordDialogService, AUTH_ROUTES, PxbAuthSecurityService } from '@pxblue/angular-auth-workflow';
 
 @Component({
-    selector: 'app-home',
-    templateUrl: './home.component.html',
-    styleUrls: ['./home.component.scss'],
+    selector: 'app-user-menu',
+    templateUrl: './user-menu.component.html',
+    styleUrls: ['./user-menu.component.scss'],
 })
-export class HomeComponent {
+export class UserMenuComponent {
+    open = false;
+
     constructor(
         private readonly _router: Router,
         private readonly _pxbSecurityService: PxbAuthSecurityService,
         private readonly _pxbChangePasswordService: PxbChangePasswordDialogService
     ) {}
 
-    openDialog(): void {
+    changePassword(): void {
+        this.open = false;
         this._pxbChangePasswordService.openDialog();
     }
 

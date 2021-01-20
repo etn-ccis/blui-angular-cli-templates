@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AuthComponent } from './pages/auth/auth.component';
 import { PxbAuthGuard, AUTH_ROUTES, getAuthSubRoutes } from '@pxblue/angular-auth-workflow';
-
-import { HomeComponent } from './pages/navigation/home/home.component';
-import { PageOneComponent } from './pages/navigation/page-one/page-one.component';
-import { PageTwoComponent } from './pages/navigation/page-two/page-two.component';
-import { NavigationComponent } from './pages/navigation/navigation.component';
+import { APP_NAV_ITEMS } from './navigation/nav-items';
+import { NavigationComponent } from './navigation/navigation.component';
+import { HomeComponent } from './pages/home/home.component';
+import { PageOneComponent } from './pages/page-one/page-one.component';
+import { PageTwoComponent } from './pages/page-two/page-two.component';
 
 const authWorkflowRoutes = getAuthSubRoutes();
 const routes: Routes = [
@@ -17,9 +17,9 @@ const routes: Routes = [
         canActivate: [PxbAuthGuard],
         component: NavigationComponent,
         children: [
-            { path: 'home', component: HomeComponent },
-            { path: 'page-one', component: PageOneComponent },
-            { path: 'page-two', component: PageTwoComponent },
+            { path: APP_NAV_ITEMS.home.route, component: HomeComponent },
+            { path: APP_NAV_ITEMS.page1.route, component: PageOneComponent },
+            { path: APP_NAV_ITEMS.page2.route, component: PageTwoComponent },
         ],
     },
 ];

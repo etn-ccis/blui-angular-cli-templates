@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import { Injectable } from '@angular/core';
 import { IPxbRegisterUIService, PxbAuthSecurityService, PxbAuthConfig } from '@pxblue/angular-auth-workflow';
-import { SAMPLE_EULA } from '../../constants/sampleEula';
+import { SAMPLE_EULA } from '../../../constants/sampleEula';
 import { FormControl } from '@angular/forms';
 
 export const randomFailure = (): boolean => Math.random() < 0.25;
