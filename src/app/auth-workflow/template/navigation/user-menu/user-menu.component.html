@@ -1,0 +1,12 @@
+<pxb-user-menu avatarValue="AV" [(open)]="open">
+    <mat-nav-list pxb-menu-body [style.paddingTop.px]="0">
+        <pxb-info-list-item [dense]="true" (click)="changePassword()">
+            <mat-icon pxb-icon>lock_open</mat-icon>
+            <div pxb-title>Change Password</div>
+        </pxb-info-list-item>
+        <pxb-info-list-item [dense]="true" (click)="logout()">
+            <mat-icon pxb-icon>login</mat-icon>
+            <div pxb-title>Log Out</div>
+        </pxb-info-list-item>
+    </mat-nav-list>
+</pxb-user-menu>

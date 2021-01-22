@@ -1,24 +1,37 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { RouterModule } from '@angular/router';
+
 //pxblue modules
 import { DrawerModule, EmptyStateModule } from '@pxblue/angular-components';
+
 //material modules
-import { FormsModule } from '@angular/forms';
-import { DrawerComponent } from './drawer/drawer.component';
-import { RouterModule } from '@angular/router';
-import { AppRoutingModule } from './app.routing';
-import { CommonModule } from '@angular/common';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { HomeComponent } from './pages/home/home.component';
-import { PageOneComponent } from './pages/page-one/page-one.component';
-import { PageTwoComponent } from './pages/page-two/page-two.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
+// app
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app.routing';
+import { PxbLogoComponent } from './components/pxb-logo/pxb-logo.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { HomeComponent } from './pages/home/home.component';
+import { PageTwoComponent } from './pages/page-two/page-two.component';
+import { PageOneComponent } from './pages/page-one/page-one.component';
+
 @NgModule({
-    declarations: [AppComponent, DrawerComponent, HomeComponent, PageOneComponent, PageTwoComponent],
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        NavigationComponent,
+        PageOneComponent,
+        PageTwoComponent,
+        PxbLogoComponent,
+    ],
     imports: [
         AppRoutingModule,
         BrowserAnimationsModule,
@@ -26,15 +39,13 @@ import { MatIconModule } from '@angular/material/icon';
         CommonModule,
         FormsModule,
         RouterModule,
-        // mat
+        FlexLayoutModule,
         MatToolbarModule,
         MatButtonModule,
         MatIconModule,
-        //pxblue
         DrawerModule,
         EmptyStateModule,
     ],
-    providers: [],
     bootstrap: [AppComponent],
 })
 export class AppModule {}
