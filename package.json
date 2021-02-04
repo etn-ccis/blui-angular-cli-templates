@@ -30,14 +30,13 @@
         "@angular/router": "^11.0.6",
         "@pxblue/angular-auth-workflow": "^1.0.1",
         "@pxblue/angular-components": "^4.0.0",
-        "@pxblue/angular-themes": "^5.2.0",
+        "@pxblue/angular-themes": "^6.0.0-beta.0",
         "@pxblue/colors": "^3.0.0",
         "@pxblue/icons": "^1.1.1",
         "@pxblue/icons-svg": "^1.1.1",
         "@pxblue/ng-progress-icons": "^1.2.1",
         "rxjs": "~6.6.0",
         "tslib": "^2.0.0",
-        "typeface-open-sans": "^1.1.13",
         "zone.js": "~0.10.2"
     },
     "devDependencies": {
