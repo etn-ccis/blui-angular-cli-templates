@@ -4,7 +4,7 @@
 
 ### Changed
 
--   Updated @pxblue/angular-themes dependency to version 6.0.0
+-   Updated @pxblue/angular-themes dependency to version 6.0.1
 -   Updated @pxblue/angular-components dependency to version 4.2.0
 
 ## v1.0.0
