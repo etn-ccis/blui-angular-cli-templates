@@ -12,8 +12,8 @@
         "lint": "eslint \"src/**/**.ts\"",
         "e2e": "ng e2e",
         "lint:fix": "eslint \"src/**/**.ts\" --fix",
-        "prettier": "prettier \"src/**/**.{ts,js,json,css,scss,html}\" --write",
-        "prettier:check": "prettier \"src/**/**.{ts,js,json,css,scss,html}\" --check"
+        "prettier": "prettier \"src/**/**.{ts,js,json,css,scss,html,md}\" --write",
+        "prettier:check": "prettier \"src/**/**.{ts,js,json,css,scss,html,md}\" --check"
     },
     "private": true,
     "dependencies": {
@@ -29,15 +29,14 @@
         "@angular/platform-browser-dynamic": "^11.0.6",
         "@angular/router": "^11.0.6",
         "@pxblue/angular-auth-workflow": "^1.0.1",
-        "@pxblue/angular-components": "^4.0.0",
-        "@pxblue/angular-themes": "^5.2.0",
+        "@pxblue/angular-components": "^4.2.0",
+        "@pxblue/angular-themes": "^6.0.1",
         "@pxblue/colors": "^3.0.0",
-        "@pxblue/icons": "^1.1.1",
-        "@pxblue/icons-svg": "^1.1.1",
+        "@pxblue/icons": "^1.2.0",
+        "@pxblue/icons-svg": "^1.2.0",
         "@pxblue/ng-progress-icons": "^1.2.1",
         "rxjs": "~6.6.0",
         "tslib": "^2.0.0",
-        "typeface-open-sans": "^1.1.13",
         "zone.js": "~0.10.2"
     },
     "devDependencies": {

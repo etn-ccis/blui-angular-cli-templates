@@ -1,12 +1,11 @@
 {
     "dependencies": [
-        "@pxblue/angular-themes@^5.2.0",
-        "@pxblue/angular-components@^4.0.0",
+        "@pxblue/angular-themes@^6.0.1",
+        "@pxblue/angular-components@^4.2.0",
         "@angular/cdk@^11.0.3",
         "@angular/flex-layout@^11.0.0-beta.33",
         "@angular/material@^11.0.3",
         "@pxblue/colors@^3.0.0",
-        "@pxblue/angular-auth-workflow@^1.0.1",
-        "typeface-open-sans"
+        "@pxblue/angular-auth-workflow@^2.0.0"
     ]
 }
