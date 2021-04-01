@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.0.2
+
+### Fixed
+
+-   Fixed app bar not receiving correct background color
+
 ## v1.0.1
 
 ### Changed
