@@ -1,5 +1,5 @@
 <pxb-drawer-layout [variant]="getVariant()" (backdropClick)="closeDrawer()">
-    <pxb-drawer pxb-drawer [open]="isOpen()">
+    <pxb-drawer pxb-drawer [open]="isOpen()" [sideBorder]="true">
         <pxb-drawer-header title="PX Blue" subtitle="Angular Project">
             <button mat-icon-button pxb-icon (click)="toggleDrawerOpen()">
                 <mat-icon>menu</mat-icon>
@@ -20,7 +20,7 @@
         </pxb-drawer-body>
     </pxb-drawer>
     <div pxb-content class="drawer-content">
-        <mat-toolbar class="toolbar">
+        <mat-toolbar class="toolbar" color="primary">
             <button
                 mat-icon-button
                 *ngIf="variant === 'temporary'"
