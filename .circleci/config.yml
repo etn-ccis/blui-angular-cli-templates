@@ -42,43 +42,21 @@ jobs:
             - checkout
             - run:
                   name: Authenticate with registry
-                  command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+                  command: |
+                      echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+                      echo "//registry.yarnpkg.com/:_authToken=$NPM_TOKEN" >> ~/.npmrc
             - run:
                   name: Publish @pxblue/angular-template-blank
                   command:  |
-                      cd src/app/blank
-                      MASTER_VERSION=`node -p "require('./package.json').version"`
-                      NPM_LATEST_VERSION=`npm show @pxblue/angular-template-blank version`
-                      if ! [ $MASTER_VERSION == $NPM_LATEST_VERSION ];
-                      then
-                          npm publish
-                      else
-                          echo "Latest version is already published."
-                      fi
+                      cd src/app/blank && yarn publish:package -b $CIRCLE_BRANCH
             - run:
                   name: Publish @pxblue/angular-template-routing
                   command:   |
-                      cd src/app/routing
-                      MASTER_VERSION=`node -p "require('./package.json').version"`
-                      NPM_LATEST_VERSION=`npm show @pxblue/angular-template-routing version`
-                      if ! [ $MASTER_VERSION == $NPM_LATEST_VERSION ];
-                      then
-                          npm publish
-                      else
-                          echo "Latest version is already published."
-                      fi
+                      cd src/app/routing && yarn publish:package -b $CIRCLE_BRANCH
             - run:
                   name: Publish @pxblue/angular-template-authentication
                   command:   |
-                      cd src/app/auth-workflow
-                      MASTER_VERSION=`node -p "require('./package.json').version"`
-                      NPM_LATEST_VERSION=`npm show @pxblue/angular-template-authentication version`
-                      if ! [ $MASTER_VERSION == $NPM_LATEST_VERSION ];
-                      then
-                          npm publish
-                      else
-                          echo "Latest version is already published."
-                      fi
+                      cd src/app/auth-workflow && yarn publish:package -b $CIRCLE_BRANCH
 workflows:
     version: 2
     angular-cli-templates:
