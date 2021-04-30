@@ -4,7 +4,7 @@
 
 ### Changed
 
--  Updated @pxblue/angular-auth-workflow to version 2.1.0
+-   Updated @pxblue/angular-auth-workflow to version 2.1.0
 
 ## v2.0.0 (April 1, 2021)
 
