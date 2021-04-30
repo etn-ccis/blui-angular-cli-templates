@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.0.2 (Not published)
+
+### Changed
+
+-   Moved `AppComponent` content into a new `HomeComponent`.
+
 ## v1.0.1 (March 31, 2021)
 
 ### Changed
