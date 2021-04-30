@@ -4,7 +4,7 @@
 
 ### Changed
 
--  Moved `AppComponent` content into a new `HomeComponent`.
+-   Moved `AppComponent` content into a new `HomeComponent`.
 
 ## v1.0.1 (March 31, 2021)
 
