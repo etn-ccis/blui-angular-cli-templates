@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.0.1 (April 30, 2021)
+
+### Changed
+
+-   Updated @pxblue dependencies
+
 ## v2.0.0 (April 1, 2021)
 
 ### Changed
