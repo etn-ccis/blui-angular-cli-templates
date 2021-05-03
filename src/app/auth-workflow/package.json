@@ -1,6 +1,6 @@
 {
     "name": "@pxblue/angular-template-authentication",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "keywords": [
         "angular",
         "template",
@@ -12,7 +12,8 @@
         "workflow"
     ],
     "scripts": {
-        "prepack": "mkdir assets & cp -r ../../assets/auth-workflow assets"
+        "prepack": "mkdir assets & cp -r ../../assets/auth-workflow assets",
+        "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish"
     },
     "description": "Authentication template for Angular projects created with the PX Blue CLI.",
     "repository": {

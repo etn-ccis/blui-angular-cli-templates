@@ -1,6 +1,6 @@
 {
     "name": "@pxblue/angular-template-blank",
-    "version": "1.0.1",
+    "version": "1.0.2-beta.0",
     "keywords": [
         "angular",
         "template",
@@ -13,6 +13,9 @@
         "type": "git",
         "url": "https://github.com/pxblue/angular-cli-templates.git",
         "directory": "blank"
+    },
+    "scripts": {
+        "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish"
     },
     "license": "BSD-3-Clause",
     "engines": {

@@ -10,9 +10,10 @@ import { MatDividerModule } from '@angular/material/divider';
 
 import { AppComponent } from './app.component';
 import { PxbLogoComponent } from './components/pxb-logo/pxb-logo.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
-    declarations: [AppComponent, PxbLogoComponent],
+    declarations: [AppComponent, HomeComponent, PxbLogoComponent],
     imports: [
         BrowserModule,
         CommonModule,
