@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.0.2 (Not published)
+
+### Added
+
+-   Added `app.component.html` file for consistency between templates.
+
 ## v2.0.1 (May 3, 2021)
 
 ### Changed
