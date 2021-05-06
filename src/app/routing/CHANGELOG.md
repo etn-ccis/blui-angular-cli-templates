@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.0.3 (Not published) 
+
+### Added
+
+-   Add `@angular/animations` to list of template dependencies.
+
 ## v1.0.2 (April 1, 2021)
 
 ### Fixed
