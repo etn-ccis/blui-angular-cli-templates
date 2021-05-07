@@ -1,10 +1,14 @@
 # Changelog
 
-## v1.0.2 (Not published)
+## v1.0.2 (May 7, 2021)
 
 ### Changed
 
 -   Moved `AppComponent` content into a new `HomeComponent`.
+
+### Added
+
+-   Added `@angular/animations` to list of template dependencies.
 
 ## v1.0.1 (March 31, 2021)
 

@@ -5,6 +5,7 @@
         "@angular/cdk@^11.0.3",
         "@angular/flex-layout@^11.0.0-beta.33",
         "@angular/material@^11.0.3",
+        "@angular/animations@^11.0.3",
         "@pxblue/colors@^3.0.0",
         "@pxblue/angular-auth-workflow@^2.1.0"
     ]
