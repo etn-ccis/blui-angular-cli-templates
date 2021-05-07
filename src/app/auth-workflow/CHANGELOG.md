@@ -1,10 +1,11 @@
 # Changelog
 
-## v2.0.2 (Not published)
+## v2.0.2 (May 7, 2021)
 
 ### Added
 
 -   Added `app.component.html` file for consistency between templates.
+-   Added `@angular/animations` to list of template dependencies.
 
 ## v2.0.1 (May 3, 2021)
 
