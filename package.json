@@ -8,7 +8,6 @@
         "start:auth-workflow": "ng serve -c auth-workflow",
         "build": "ng build",
         "test": "ng test",
-        "test:ci": "ng test --watch false",
         "lint": "eslint \"src/**/**.ts\"",
         "e2e": "ng e2e",
         "lint:fix": "eslint \"src/**/**.ts\" --fix",
