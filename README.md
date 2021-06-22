@@ -87,4 +87,6 @@ This command should follow this format:
 
 Once this is added, your new template is ready for development. 
 
+## Browser Support
 
+PX Blue CLI Templates will work with any modern browser. For details refer to our [Browser Support](https://pxblue.github.io/development/frameworks-web/angular#browser-support) documentation.
