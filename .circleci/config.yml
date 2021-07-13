@@ -87,11 +87,11 @@ jobs:
                   command:  |
                       cd src/app/blank && yarn tag:package -b $CIRCLE_BRANCH -s -angular-template-blank
             - run:
-                  name: Publish @pxblue/angular-template-routing
+                  name: Tag @pxblue/angular-template-routing
                   command:   |
                       cd src/app/routing && yarn tag:package -b $CIRCLE_BRANCH -s -angular-template-routing
             - run:
-                  name: Publish @pxblue/angular-template-authentication
+                  name: Tag @pxblue/angular-template-authentication
                   command:   |
                       cd src/app/auth-workflow && yarn tag:package -b $CIRCLE_BRANCH -s -angular-template-authentication
 workflows:
