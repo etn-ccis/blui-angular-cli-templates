@@ -117,3 +117,7 @@ workflows:
             - tag:
                   requires:
                       - publish
+                  filters:
+                      branches:
+                          only:
+                              - master
