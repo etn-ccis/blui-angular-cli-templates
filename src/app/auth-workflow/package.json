@@ -14,7 +14,7 @@
     "scripts": {
         "prepack": "mkdir assets & cp -r ../../assets/auth-workflow assets",
         "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish",
-        "tag:package": "set npm_config_yes=true && npx -p @pxblue/tag pxb-tag"
+        "tag:package": "npx -p @pxblue/tag pxb-tag"
     },
     "description": "Authentication template for Angular projects created with the PX Blue CLI.",
     "repository": {
