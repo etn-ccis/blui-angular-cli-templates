@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.0.3 (July 14, 2021)
+
+### Changed
+
+-   Updated to latest pxblue packages.
+
 ## v1.0.2 (May 7, 2021)
 
 ### Changed
