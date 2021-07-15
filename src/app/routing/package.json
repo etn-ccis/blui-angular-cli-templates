@@ -1,6 +1,6 @@
 {
     "name": "@pxblue/angular-template-routing",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "keywords": [
         "angular",
         "template",
@@ -16,7 +16,8 @@
         "directory": "routing"
     },
     "scripts": {
-        "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish"
+        "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish",
+        "tag:package": "npx -p @pxblue/tag pxb-tag"
     },
     "license": "BSD-3-Clause",
     "engines": {
