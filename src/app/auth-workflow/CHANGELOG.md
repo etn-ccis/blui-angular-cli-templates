@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.0.4 (July 22, 2021)
+
+### Fixed
+
+-   Fixed missing @pxblue/colors dependency version.
+
 ## v2.0.3 (July 14, 2021)
 
 ### Changed
