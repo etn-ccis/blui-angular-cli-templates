@@ -46,10 +46,10 @@ export class AuthUIService implements IPxbAuthUIService {
             setTimeout(() => {
                 if (password.toLowerCase() === 'fail') {
                     return reject({
-                        title: 'test',
-                        message: 'hello',
+                        title: 'Error',
+                        message: 'There was an error while trying to login.',
                         position: 'bottom',
-                        mode: ['form', 'dialog', 'message-box']
+                        mode: ['dialog', 'message-box']
                     } as LoginErrorData);
                 }
                 return resolve();
