@@ -49,7 +49,7 @@ export class AuthUIService implements IPxbAuthUIService {
                         title: 'Error',
                         message: 'There was an error while trying to login.',
                         position: 'bottom',
-                        mode: ['dialog', 'message-box']
+                        mode: ['dialog', 'message-box'],
                     } as LoginErrorData);
                 }
                 return resolve();
