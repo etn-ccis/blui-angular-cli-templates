@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import { Injectable } from '@angular/core';
-import { IPxbAuthUIService, PxbAuthSecurityService } from '@pxblue/angular-auth-workflow';
+import { IPxbAuthUIService, PxbAuthSecurityService, LoginErrorData } from '@pxblue/angular-auth-workflow';
 import { LocalStorageService } from '../local-storage/local-storage.service';
 
 const TIMEOUT_MS = 1500;
@@ -44,7 +44,12 @@ export class AuthUIService implements IPxbAuthUIService {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
                 if (password.toLowerCase() === 'fail') {
-                    return reject();
+                    return reject({
+                        title: 'Error',
+                        message: 'There was an error while trying to login.',
+                        position: 'bottom',
+                        mode: ['dialog', 'message-box'],
+                    } as LoginErrorData);
                 }
                 return resolve();
             }, TIMEOUT_MS);
