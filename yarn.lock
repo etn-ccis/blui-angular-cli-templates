@@ -1564,10 +1564,10 @@
   dependencies:
     tslib "^2.0.0"
 
-"@pxblue/angular-components@^4.3.0":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@pxblue/angular-components/-/angular-components-4.3.0.tgz#34e80485888becb02e56d3e41a90a8818d2d6be0"
-  integrity sha512-5evW0l7qA/9YT12A0FCc7IwL3DpOLF37rgwbuMmzK94fIXIzJ+WGWOYmQSCevzTK9i//r+3yAz4Jk2TDYQjiRg==
+"@pxblue/angular-components@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@pxblue/angular-components/-/angular-components-6.0.0.tgz#842e0c5a4f79493aaafc70158836bdc2c60b8ee5"
+  integrity sha512-JAylK1xabKpIJfmRklT3pdh+hp+nrMRr/+12wmrWYS1fx/01QUSZmuAjRCdriMS6XjlxTB0hd0F4HWhZfB08QA==
   dependencies:
     tslib "^2.0.0"
 
