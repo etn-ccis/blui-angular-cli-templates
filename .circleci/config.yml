@@ -6,7 +6,7 @@ jobs:
     build_project:
         working_directory: ~/angular-cli-templates
         docker:
-            - image: circleci/node:12.9.1-browsers
+            - image: circleci/node:12.14.1-browsers
         steps:
             - checkout
             - restore_cache:
@@ -46,7 +46,7 @@ jobs:
     coverage_report:
         working_directory: ~/angular-cli-templates
         docker:
-            - image: circleci/node:12.9.1-browsers
+            - image: circleci/node:12.14.1-browsers
         steps:
             - checkout
             - attach_workspace:
@@ -56,7 +56,7 @@ jobs:
                 token: ac5c0a5d-760d-401d-9cbb-a2e8c86a8aaf
     publish:
         docker:
-            - image: circleci/node:12.9.1-browsers
+            - image: circleci/node:12.14.1-browsers
         steps:
             - checkout
             - run:
@@ -78,7 +78,7 @@ jobs:
                       cd src/app/auth-workflow && yarn publish:package -b $CIRCLE_BRANCH
     tag:
         docker:
-            - image: circleci/node:12.9.1-browsers
+            - image: circleci/node:12.14.1-browsers
         steps:
             - checkout
             - gh/setup

@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.0.0 (October 1, 2021)
+
+### Changed
+
+-   Updated to latest pxblue dependencies and upgraded to angular 12 dependencies.
+
 ## v1.0.5 (July 26, 2021)
 
 ### Fixed
