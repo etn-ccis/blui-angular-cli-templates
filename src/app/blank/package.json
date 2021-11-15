@@ -8,7 +8,7 @@
         "Brightlayer UI",
         "cli"
     ],
-    "description": "The base template for Angular projects created with the PX Blue CLI.",
+    "description": "The base template for Angular projects created with the Brightlayer UI CLI.",
     "repository": {
         "type": "git",
         "url": "https://github.com/brightlayer-ui/angular-cli-templates.git",

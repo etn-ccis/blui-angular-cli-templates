@@ -9,7 +9,7 @@
         "cli",
         "routing"
     ],
-    "description": "Routing template for Angular projects created with the PX Blue CLI.",
+    "description": "Routing template for Angular projects created with the Brightlayer UI CLI.",
     "repository": {
         "type": "git",
         "url": "https://github.com/brightlayer-ui/angular-cli-templates.git",
