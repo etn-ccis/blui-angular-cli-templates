@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
-import { AUTH_ROUTES, BluiAuthSecurityService, BluiChangePasswordDialogService } from '@brightlayer-ui/angular-auth-workflow';
+import {
+    AUTH_ROUTES,
+    BluiAuthSecurityService,
+    BluiChangePasswordDialogService,
+} from '@brightlayer-ui/angular-auth-workflow';
 import { Router } from '@angular/router';
 
 @Component({
