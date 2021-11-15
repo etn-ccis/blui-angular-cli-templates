@@ -1,9 +1,9 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'app-pxb-logo',
+    selector: 'app-blui-logo',
     template: `
-        <svg viewBox="0 0 82 82" [attr.width]="size" [attr.height]="size" class="pxb-logo">
+        <svg viewBox="0 0 82 82" [attr.width]="size" [attr.height]="size" class="blui-logo">
             <ellipse cx="41" cy="41" rx="11.2" ry="11.1" [attr.fill]="color" />
             <path
                 [attr.fill]="color"
@@ -16,9 +16,9 @@ import { Component, Input } from '@angular/core';
             />
         </svg>
     `,
-    styleUrls: ['pxb-logo.component.scss'],
+    styleUrls: ['blui-logo.component.scss'],
 })
-export class PxbLogoComponent {
+export class BluiLogoComponent {
     @Input() size: number;
     @Input() color: string;
 }

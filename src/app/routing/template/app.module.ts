@@ -13,8 +13,8 @@ import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule } from '@angular/router';
 
-//pxblue modules
-import { DrawerModule, EmptyStateModule } from '@pxblue/angular-components';
+//brightlayer-ui modules
+import { DrawerModule, EmptyStateModule } from '@brightlayer-ui/angular-components';
 
 //material modules
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -24,7 +24,7 @@ import { MatIconModule } from '@angular/material/icon';
 // app
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing';
-import { PxbLogoComponent } from './components/pxb-logo/pxb-logo.component';
+import { BluiLogoComponent } from './components/blui-logo/blui-logo.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PageTwoComponent } from './pages/page-two/page-two.component';
@@ -37,7 +37,7 @@ import { PageOneComponent } from './pages/page-one/page-one.component';
         NavigationComponent,
         PageOneComponent,
         PageTwoComponent,
-        PxbLogoComponent,
+        BluiLogoComponent,
     ],
     imports: [
         AppRoutingModule,

@@ -16,11 +16,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDividerModule } from '@angular/material/divider';
 
 import { AppComponent } from './app.component';
-import { PxbLogoComponent } from './components/pxb-logo/pxb-logo.component';
+import { BluiLogoComponent } from './components/blui-logo/blui-logo.component';
 import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
-    declarations: [AppComponent, HomeComponent, PxbLogoComponent],
+    declarations: [AppComponent, HomeComponent, BluiLogoComponent],
     imports: [
         BrowserModule,
         CommonModule,

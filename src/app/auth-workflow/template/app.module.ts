@@ -18,14 +18,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 
-import { PxbAuthModule, PxbAuthUIService, PxbRegisterUIService } from '@pxblue/angular-auth-workflow';
+import { BluiAuthModule, BluiAuthUIService, BluiRegisterUIService } from '@brightlayer-ui/angular-auth-workflow';
 import {
     DrawerModule,
     EmptyStateModule,
     InfoListItemModule,
     SpacerModule,
     UserMenuModule,
-} from '@pxblue/angular-components';
+} from '@brightlayer-ui/angular-components';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing';
@@ -34,7 +34,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { PageOneComponent } from './pages/page-one/page-one.component';
 import { PageTwoComponent } from './pages/page-two/page-two.component';
 import { AuthComponent } from './pages/auth/auth.component';
-import { PxbLogoComponent } from './components/pxb-logo/pxb-logo.component';
+import { BluiLogoComponent } from './components/blui-logo/blui-logo.component';
 import { UserMenuComponent } from './navigation/user-menu/user-menu.component';
 import { AuthUIService } from './services/auth-workflow/auth-ui/auth-ui.service';
 import { RegisterUIService } from './services/auth-workflow/register-ui/register-ui.service';
@@ -47,7 +47,7 @@ import { RegisterUIService } from './services/auth-workflow/register-ui/register
         HomeComponent,
         PageOneComponent,
         PageTwoComponent,
-        PxbLogoComponent,
+        BluiLogoComponent,
         UserMenuComponent,
     ],
     imports: [
@@ -66,20 +66,20 @@ import { RegisterUIService } from './services/auth-workflow/register-ui/register
         InfoListItemModule,
         SpacerModule,
         EmptyStateModule,
-        PxbAuthModule,
+        BluiAuthModule,
         UserMenuModule,
     ],
     providers: [
         {
             provide: 'APP_NAME',
-            useValue: 'PXB_AUTH_DEMO_APP',
+            useValue: 'Blui_AUTH_DEMO_APP',
         },
         {
-            provide: PxbAuthUIService,
+            provide: BluiAuthUIService,
             useClass: AuthUIService,
         },
         {
-            provide: PxbRegisterUIService,
+            provide: BluiRegisterUIService,
             useClass: RegisterUIService,
         },
     ],

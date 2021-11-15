@@ -1,0 +1,9 @@
+@keyframes blui-logo-spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.blui-logo {
+    animation: blui-logo-spin 2500ms linear infinite;
+}

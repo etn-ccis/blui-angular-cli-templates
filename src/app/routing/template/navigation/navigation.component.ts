@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DrawerLayoutVariantType } from '@pxblue/angular-components';
+import { DrawerLayoutVariantType } from '@brightlayer-ui/angular-components';
 import { NavigationEnd, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { ViewportService } from '../services/viewport/viewport.service';
@@ -56,7 +56,7 @@ export class NavigationComponent {
         return this._stateService.getSelectedItem();
     }
 
-    // Observes route changes and determines which PXB Auth page to show via route name.
+    // Observes route changes and determines which BLUI Auth page to show via route name.
     private _listenForRouteChanges(): void {
         this.routeListener = this._router.events.subscribe((route) => {
             if (route instanceof NavigationEnd) {

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AUTH_ROUTES, PxbAuthSecurityService, PxbChangePasswordDialogService } from '@pxblue/angular-auth-workflow';
+import { AUTH_ROUTES, BluiAuthSecurityService, BluiChangePasswordDialogService } from '@brightlayer-ui/angular-auth-workflow';
 import { Router } from '@angular/router';
 
 @Component({
@@ -12,17 +12,17 @@ export class UserMenuComponent {
 
     constructor(
         private readonly _router: Router,
-        private readonly _pxbSecurityService: PxbAuthSecurityService,
-        private readonly _pxbChangePasswordService: PxbChangePasswordDialogService
+        private readonly _bluiSecurityService: BluiAuthSecurityService,
+        private readonly _bluiChangePasswordService: BluiChangePasswordDialogService
     ) {}
 
     changePassword(): void {
         this.open = false;
-        this._pxbChangePasswordService.openDialog();
+        this._bluiChangePasswordService.openDialog();
     }
 
     logout(): void {
-        this._pxbSecurityService.updateSecurityState({ isAuthenticatedUser: false });
+        this._bluiSecurityService.updateSecurityState({ isAuthenticatedUser: false });
         void this._router.navigate([AUTH_ROUTES.AUTH_WORKFLOW]);
     }
 }

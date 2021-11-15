@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import * as Colors from '@pxblue/colors';
+import * as Colors from '@brightlayer-ui/colors';
 import { ViewportService } from '../../services/viewport.service';
 
 @Component({

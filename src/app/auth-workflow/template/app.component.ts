@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { LocalStorageService } from './services/auth-workflow/local-storage/local-storage.service';
-import { PxbAuthConfig, PxbAuthSecurityService, SecurityContext } from '@pxblue/angular-auth-workflow';
+import { BluiAuthConfig, BluiAuthSecurityService, SecurityContext } from '@brightlayer-ui/angular-auth-workflow';
 
 @Component({
     selector: 'app-root',
@@ -8,25 +8,25 @@ import { PxbAuthConfig, PxbAuthSecurityService, SecurityContext } from '@pxblue/
 })
 export class AppComponent {
     constructor(
-        private readonly _pxbSecurityService: PxbAuthSecurityService,
+        private readonly _bluiSecurityService: BluiAuthSecurityService,
         private readonly _localStorageService: LocalStorageService,
-        private readonly _pxbAuthConfig: PxbAuthConfig
+        private readonly _bluiAuthConfig: BluiAuthConfig
     ) {
-        this._configurePxbAuthModule();
+        this._configureBluiAuthModule();
         this._listenForAuthStateChanges();
     }
 
-    private _configurePxbAuthModule(): void {
-        this._pxbAuthConfig.projectImage = 'assets/auth-workflow/eaton_stacked_logo.png';
-        this._pxbAuthConfig.backgroundImage = 'assets/auth-workflow/background.svg';
-        this._pxbAuthConfig.allowDebugMode = true;
-        this._pxbSecurityService.inferOnAuthenticatedRoute('home');
+    private _configureBluiAuthModule(): void {
+        this._bluiAuthConfig.projectImage = 'assets/auth-workflow/eaton_stacked_logo.png';
+        this._bluiAuthConfig.backgroundImage = 'assets/auth-workflow/background.svg';
+        this._bluiAuthConfig.allowDebugMode = true;
+        this._bluiSecurityService.inferOnAuthenticatedRoute('home');
     }
 
     // When a user transitions between being logged in / logged out, update session information.
     // This demo app stores session information in localStorage, this is just as a proof-of-concept.
     private _listenForAuthStateChanges(): void {
-        this._pxbSecurityService.securityStateChanges().subscribe((state: SecurityContext) => {
+        this._bluiSecurityService.securityStateChanges().subscribe((state: SecurityContext) => {
             const email = state.rememberMeDetails.email;
             const rememberMe = state.rememberMeDetails.rememberMe;
             const isAuth = state.isAuthenticatedUser;

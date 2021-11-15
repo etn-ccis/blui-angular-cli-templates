@@ -65,15 +65,15 @@ jobs:
                       echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
                       echo "//registry.yarnpkg.com/:_authToken=$NPM_TOKEN" >> ~/.npmrc
             - run:
-                  name: Publish @pxblue/angular-template-blank
+                  name: Publish @brightlayer-ui/angular-template-blank
                   command:  |
                       cd src/app/blank && yarn publish:package -b $CIRCLE_BRANCH
             - run:
-                  name: Publish @pxblue/angular-template-routing
+                  name: Publish @brightlayer-ui/angular-template-routing
                   command:   |
                       cd src/app/routing && yarn publish:package -b $CIRCLE_BRANCH
             - run:
-                  name: Publish @pxblue/angular-template-authentication
+                  name: Publish @brightlayer-ui/angular-template-authentication
                   command:   |
                       cd src/app/auth-workflow && yarn publish:package -b $CIRCLE_BRANCH
     tag:
@@ -83,15 +83,15 @@ jobs:
             - checkout
             - gh/setup
             - run:
-                  name: Tag @pxblue/angular-template-blank
+                  name: Tag @brightlayer-ui/angular-template-blank
                   command:  |
                       cd src/app/blank && yarn tag:package -b $CIRCLE_BRANCH -s -angular-template-blank
             - run:
-                  name: Tag @pxblue/angular-template-routing
+                  name: Tag @brightlayer-ui/angular-template-routing
                   command:   |
                       cd src/app/routing && yarn tag:package -b $CIRCLE_BRANCH -s -angular-template-routing
             - run:
-                  name: Tag @pxblue/angular-template-authentication
+                  name: Tag @brightlayer-ui/angular-template-authentication
                   command:   |
                       cd src/app/auth-workflow && yarn tag:package -b $CIRCLE_BRANCH -s -angular-template-authentication
 workflows:

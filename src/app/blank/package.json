@@ -1,28 +1,28 @@
 {
-    "name": "@pxblue/angular-template-blank",
-    "version": "2.0.0",
+    "name": "@brightlayer-ui/angular-template-blank",
+    "version": "2.0.0-beta.0",
     "keywords": [
         "angular",
         "template",
-        "pxblue",
-        "px blue",
+        "brightlayer-ui",
+        "Brightlayer UI",
         "cli"
     ],
     "description": "The base template for Angular projects created with the PX Blue CLI.",
     "repository": {
         "type": "git",
-        "url": "https://github.com/pxblue/angular-cli-templates.git",
+        "url": "https://github.com/brightlayer-ui/angular-cli-templates.git",
         "directory": "blank"
     },
     "scripts": {
-        "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish",
-        "tag:package": "npx -p @pxblue/tag pxb-tag"
+        "publish:package": "set npm_config_yes=true && npx -p @brightlayer-ui/publish blui-publish",
+        "tag:package": "npx -p @brightlayer-ui/tag blui-tag -s -blui-angular-template-blank"
     },
     "license": "BSD-3-Clause",
     "engines": {
         "node": ">=10"
     },
     "bugs": {
-        "url": "https://github.com/pxblue/angular-cli-templates/issues"
+        "url": "https://github.com/brightlayer-ui/angular-cli-templates/issues"
     }
 }
