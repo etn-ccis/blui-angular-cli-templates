@@ -1228,10 +1228,10 @@
     "@babel/helper-validator-identifier" "^7.15.7"
     to-fast-properties "^2.0.0"
 
-"@brightlayer-ui/angular-auth-workflow@beta":
-  version "2.4.0-beta.0"
-  resolved "https://registry.yarnpkg.com/@brightlayer-ui/angular-auth-workflow/-/angular-auth-workflow-2.4.0-beta.0.tgz#2d9c001ec2e92c007818d0ed0b2faab9265c3ba3"
-  integrity sha512-3lm5/YreRTuRcfvBtOT9hUQWOvKmJrRZJNkpQWJ3tDaNlmKeJD/8EjukcE8StzxIPcSW5qOgX4cYTz0DTcMOhw==
+"@brightlayer-ui/angular-auth-workflow@^2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@brightlayer-ui/angular-auth-workflow/-/angular-auth-workflow-2.4.0.tgz#6e4f7bc406414cd84a3a19da2a1627601ae5d965"
+  integrity sha512-qV6qQnRBlbQL46qnr6bCczKSeadSiWmIVUH6/Bie/NNXPHotDU+KYuSKUQUp74HGkNrum9xllpfEwDahsY7tPQ==
   dependencies:
     tslib "^2.0.0"
 
