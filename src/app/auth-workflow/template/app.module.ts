@@ -34,7 +34,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { PageOneComponent } from './pages/page-one/page-one.component';
 import { PageTwoComponent } from './pages/page-two/page-two.component';
 import { AuthComponent } from './pages/auth/auth.component';
-import { BluiLogoComponent } from './components/blui-logo/blui-logo.component';
+import { PxbLogoComponent } from './components/pxb-logo/pxb-logo.component';
 import { UserMenuComponent } from './navigation/user-menu/user-menu.component';
 import { AuthUIService } from './services/auth-workflow/auth-ui/auth-ui.service';
 import { RegisterUIService } from './services/auth-workflow/register-ui/register-ui.service';
@@ -47,7 +47,7 @@ import { RegisterUIService } from './services/auth-workflow/register-ui/register
         HomeComponent,
         PageOneComponent,
         PageTwoComponent,
-        BluiLogoComponent,
+        PxbLogoComponent,
         UserMenuComponent,
     ],
     imports: [

@@ -24,7 +24,7 @@ import { MatIconModule } from '@angular/material/icon';
 // app
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing';
-import { BluiLogoComponent } from './components/blui-logo/blui-logo.component';
+import { PxbLogoComponent } from './components/pxb-logo/pxb-logo.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PageTwoComponent } from './pages/page-two/page-two.component';
@@ -37,7 +37,7 @@ import { PageOneComponent } from './pages/page-one/page-one.component';
         NavigationComponent,
         PageOneComponent,
         PageTwoComponent,
-        BluiLogoComponent,
+        PxbLogoComponent,
     ],
     imports: [
         AppRoutingModule,
