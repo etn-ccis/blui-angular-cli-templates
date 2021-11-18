@@ -1,11 +1,11 @@
 {
     "dependencies": [
-        "@pxblue/angular-themes@^6.3.0",
-        "@pxblue/angular-components@^6.0.0",
+        "@brightlayer-ui/angular-themes@^6.3.0",
+        "@brightlayer-ui/angular-components@^6.0.0",
         "@angular/cdk@^12.2.4",
         "@angular/flex-layout@^12.0.0-beta.35",
         "@angular/material@^12.2.4",
         "@angular/animations@^12.2.4",
-        "@pxblue/colors@^3.0.0"
+        "@brightlayer-ui/colors@^3.0.0"
     ]
 }
