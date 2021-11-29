@@ -85,15 +85,15 @@ jobs:
             - run:
                   name: Tag @brightlayer-ui/angular-template-blank
                   command:  |
-                      cd src/app/blank && yarn tag:package -b $CIRCLE_BRANCH -s -angular-template-blank
+                      cd src/app/blank && yarn tag:package -b $CIRCLE_BRANCH
             - run:
                   name: Tag @brightlayer-ui/angular-template-routing
                   command:   |
-                      cd src/app/routing && yarn tag:package -b $CIRCLE_BRANCH -s -angular-template-routing
+                      cd src/app/routing && yarn tag:package -b $CIRCLE_BRANCH
             - run:
                   name: Tag @brightlayer-ui/angular-template-authentication
                   command:   |
-                      cd src/app/auth-workflow && yarn tag:package -b $CIRCLE_BRANCH -s -angular-template-authentication
+                      cd src/app/auth-workflow && yarn tag:package -b $CIRCLE_BRANCH
 workflows:
     version: 2
     angular-cli-templates:
