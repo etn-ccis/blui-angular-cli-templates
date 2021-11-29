@@ -29,8 +29,8 @@
                         ],
                         "styles": [
                             "src/styles.scss",
-                            "./node_modules/@pxblue/angular-themes/theme.scss",
-                            "./node_modules/@pxblue/angular-themes/open-sans.scss"
+                            "./node_modules/@brightlayer-ui/angular-themes/theme.scss",
+                            "./node_modules/@brightlayer-ui/angular-themes/open-sans.scss"
                         ],
                         "scripts": []
                     },
@@ -128,8 +128,8 @@
                         ],
                         "styles": [
                             "src/styles.scss",
-                            "./node_modules/@pxblue/angular-themes/theme.scss",
-                            "./node_modules/@pxblue/angular-themes/open-sans.scss"
+                            "./node_modules/@brightlayer-ui/angular-themes/theme.scss",
+                            "./node_modules/@brightlayer-ui/angular-themes/open-sans.scss"
                         ],
                         "scripts": []
                     }

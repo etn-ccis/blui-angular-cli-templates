@@ -13,8 +13,8 @@ import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule } from '@angular/router';
 
-//pxblue modules
-import { DrawerModule, EmptyStateModule } from '@pxblue/angular-components';
+//brightlayer-ui modules
+import { DrawerModule, EmptyStateModule } from '@brightlayer-ui/angular-components';
 
 //material modules
 import { MatToolbarModule } from '@angular/material/toolbar';

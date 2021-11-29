@@ -3,13 +3,13 @@
         <button style="margin-left: -8px" mat-icon-button>
             <mat-icon>menu</mat-icon>
         </button>
-        <div [style.marginLeft.px]="isSmall() ? 8 : 24">PX Blue Angular</div>
+        <div [style.marginLeft.px]="isSmall() ? 8 : 24">Brightlayer UI Angular</div>
     </mat-toolbar>
     <div class="app-body" [style.backgroundColor]="colors.white[50]">
         <div class="app-body-content">
             <app-pxb-logo [color]="colors.blue[500]" [size]="isSmall() ? 100 : 160"></app-pxb-logo>
             <div class="app-title" [class.mat-display-3]="!isSmall()" [class.mat-display-1]="isSmall()">
-                Welcome to PX <span [style.color]="colors.blue[500]">Blue</span>.
+                Welcome to Brightlayer <span [style.color]="colors.blue[500]">UI</span>.
             </div>
             <div class="mat-h3 app-instructions">
                 Edit <strong>src/app/app.component.html</strong> and save to reload.
@@ -22,24 +22,30 @@
                 style="width: 100%; justify-content: space-between"
             >
                 <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="8px">
-                    <a mat-button target="_blank" href="https://pxblue.github.io/"> PX Blue Documentation </a>
-                    <a mat-button target="_blank" href="https://pxblue.github.io/patterns">
+                    <a mat-button target="_blank" href="https://brightlayer-ui.github.io/">
+                        Brightlayer UI Documentation
+                    </a>
+                    <a mat-button target="_blank" href="https://brightlayer-ui.github.io/patterns">
                         Design Pattern Descriptions
                     </a>
-                    <a mat-button target="_blank" href="https://github.com/pxblue"> Visit Us On Github </a>
-                    <a mat-button target="_blank" href="https://pxblue.github.io/roadmap"> Release Roadmap </a>
+                    <a mat-button target="_blank" href="https://github.com/brightlayer-ui"> Visit Us On Github </a>
+                    <a mat-button target="_blank" href="https://brightlayer-ui.github.io/roadmap"> Release Roadmap </a>
                 </div>
                 <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="8px">
-                    <a mat-button target="_blank" href="https://pxblue.github.io/development/frameworks-web/angular">
+                    <a
+                        mat-button
+                        target="_blank"
+                        href="https://brightlayer-ui.github.io/development/frameworks-web/angular"
+                    >
                         Angular Getting Started Guide
                     </a>
-                    <a mat-button target="_blank" href="https://pxblue-components.github.io/angular/">
-                        PX Blue Angular Component Library
+                    <a mat-button target="_blank" href="https://brightlayer-ui-components.github.io/angular">
+                        Brightlayer UI Angular Component Library
                     </a>
-                    <a mat-button target="_blank" href="https://github.com/pxblue/angular-design-patterns">
+                    <a mat-button target="_blank" href="https://github.com/brightlayer-ui/angular-design-patterns">
                         Design Pattern Source on Github
                     </a>
-                    <a mat-button target="_blank" href="https://pxblue.github.io/community/contactus">
+                    <a mat-button target="_blank" href="https://brightlayer-ui.github.io/community/contactus">
                         Send Feedback or Suggestions
                     </a>
                 </div>
