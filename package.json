@@ -8,12 +8,15 @@
         "start:auth-workflow": "ng serve -c auth-workflow",
         "build": "ng build",
         "test": "ng test",
+        "test:ci": "ng test --watch false",
         "lint": "eslint \"src/**/**.ts\"",
         "e2e": "ng e2e",
         "lint:fix": "eslint \"src/**/**.ts\" --fix",
         "prettier": "prettier \"src/**/**.{ts,js,json,css,scss,html,md}\" --write",
         "prettier:check": "prettier \"src/**/**.{ts,js,json,css,scss,html,md}\" --check",
-        "coverage": "yarn test --no-watch --code-coverage"
+        "coverage": "yarn test --no-watch --code-coverage",
+        "generate:licenses": "npm-license-crawler -onlyDirectDependencies -json LICENSES.json",
+        "precommit": "yarn && yarn prettier && yarn lint && yarn test:ci && yarn build && yarn generate:licenses"
     },
     "private": true,
     "dependencies": {
@@ -61,6 +64,7 @@
         "karma-coverage": "^2.0.3",
         "karma-jasmine": "~4.0.1",
         "karma-jasmine-html-reporter": "^1.7.0",
+        "npm-license-crawler": "^0.2.1",
         "prettier": "^2.3.2",
         "protractor": "~7.0.0",
         "ts-node": "~8.3.0",
