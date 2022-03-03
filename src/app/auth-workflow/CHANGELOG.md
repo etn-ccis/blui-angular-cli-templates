@@ -1,5 +1,11 @@
 # Changelog
 
+## v4.0.0 (Not published)
+
+### Changed
+
+-   Updated to latest Brightlayer UI dependencies and upgraded to angular 13 dependencies.
+
 ## v3.0.0 (November 29, 2021)
 
 ### Changed
