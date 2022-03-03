@@ -6,7 +6,6 @@
 
 -   Updated to latest Brightlayer UI dependencies and upgraded to angular 13 dependencies.
 
-
 ## v2.0.0 (November 29, 2021)
 
 ### Changed
