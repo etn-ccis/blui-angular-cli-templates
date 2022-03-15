@@ -47,3 +47,5 @@ Thumbs.db
 
 # Asset copying
 src/app/auth-workflow/assets
+
+.angular

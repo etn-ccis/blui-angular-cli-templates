@@ -1,4 +1,5 @@
 # Angular CLI Templates
+[![codecov](https://codecov.io/gh/brightlayer-ui/angular-cli-templates/branch/master/graph/badge.svg?token=MHGB0RGXVF)](https://codecov.io/gh/brightlayer-ui/angular-cli-templates)
 
 These are project templates that are used by the Brightlayer UI CLI when starting a new Brightlayer UI project. 
 
