@@ -1198,10 +1198,10 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@brightlayer-ui/angular-auth-workflow@^3.0.0":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@brightlayer-ui/angular-auth-workflow/-/angular-auth-workflow-3.0.1.tgz#270873cd62403728f18b7bf004e54294d373161a"
-  integrity sha512-Sl89w3SQRSB5xP/ZEf6zk4Nya8RupQoX3IEVAmFHKjGB5MZg7fwNs6gGD9/mPV9ZNFK6xppxgtXCqFY0XykyGw==
+"@brightlayer-ui/angular-auth-workflow@^4.0.0-beta.0":
+  version "4.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/@brightlayer-ui/angular-auth-workflow/-/angular-auth-workflow-4.0.0-beta.0.tgz#8160761288df1734ff0c00c041f98a09f6c69e4f"
+  integrity sha512-Q9F7rTPuvzVDp0FwWedXP2+YxqoY1Zz4WA6JPRM0e5+hwwSbtpBrAHKySYG3bgy5nFKO06S6xwaJ/M6uv6HqRQ==
   dependencies:
     tslib "^2.0.0"
 
@@ -4853,9 +4853,9 @@ levn@^0.4.1:
     prelude-ls "^1.2.1"
     type-check "~0.4.0"
 
-"license-checker@git+https://github.com/mwittig/license-checker.git#d546e3f738e14c62e732346fa355162d46700893":
+"license-checker@git+https://github.com/mwittig/license-checker#d546e3f738e14c62e732346fa355162d46700893":
   version "1.0.0"
-  resolved "git+https://github.com/mwittig/license-checker.git#d546e3f738e14c62e732346fa355162d46700893"
+  resolved "git+https://github.com/mwittig/license-checker#d546e3f738e14c62e732346fa355162d46700893"
   dependencies:
     chalk "~0.5.1"
     mkdirp "^0.3.5"
