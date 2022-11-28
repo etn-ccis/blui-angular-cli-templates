@@ -20,14 +20,7 @@ import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
     declarations: [AppComponent, HomeComponent, PxbLogoComponent],
-    imports: [
-        BrowserModule,
-        CommonModule,
-        MatButtonModule,
-        MatDividerModule,
-        MatToolbarModule,
-        MatIconModule,
-    ],
+    imports: [BrowserModule, CommonModule, MatButtonModule, MatDividerModule, MatToolbarModule, MatIconModule],
     providers: [],
     bootstrap: [AppComponent],
 })

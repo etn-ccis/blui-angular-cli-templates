@@ -10,7 +10,6 @@
 
 -   Removed deprecated `@angular/flex-layout` dependency.
 
-
 ## v4.0.0 (March 15, 2022)
 
 ### Changed
