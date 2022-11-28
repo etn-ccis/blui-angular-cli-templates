@@ -1,10 +1,15 @@
 # Changelog
 
-## v5.0.0 (November 23, 2022)
+## v5.0.0 (November 28, 2022)
 
 ### Changed
 
 -   Updated to latest Brightlayer UI dependencies and upgraded to angular 14 dependencies.
+
+### Removed
+
+-   Removed deprecated `@angular/flex-layout` dependency.
+
 
 ## v4.0.0 (March 15, 2022)
 
