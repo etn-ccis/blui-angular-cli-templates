@@ -3,7 +3,6 @@
         "@brightlayer-ui/angular-themes@^8.0.0",
         "@brightlayer-ui/angular-components@^8.0.0",
         "@angular/cdk@^14.0.0",
-        "@angular/flex-layout@^14.0.0-beta.41",
         "@angular/material@^14.0.0",
         "@angular/animations@^14.0.0",
         "@brightlayer-ui/colors@^3.0.0"

@@ -8,7 +8,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -21,15 +20,7 @@ import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
     declarations: [AppComponent, HomeComponent, PxbLogoComponent],
-    imports: [
-        BrowserModule,
-        CommonModule,
-        FlexLayoutModule,
-        MatButtonModule,
-        MatDividerModule,
-        MatToolbarModule,
-        MatIconModule,
-    ],
+    imports: [BrowserModule, CommonModule, MatButtonModule, MatDividerModule, MatToolbarModule, MatIconModule],
     providers: [],
     bootstrap: [AppComponent],
 })
