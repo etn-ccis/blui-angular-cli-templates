@@ -1,6 +1,6 @@
 # Changelog
 
-## v5.0.0 (November 28, 2022)
+## v5.0.0 (November 29, 2022)
 
 ### Changed
 
