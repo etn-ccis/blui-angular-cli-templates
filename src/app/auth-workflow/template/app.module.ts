@@ -10,7 +10,6 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { CommonModule } from '@angular/common';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -57,7 +56,6 @@ import { RegisterUIService } from './services/auth-workflow/register-ui/register
         CommonModule,
         FormsModule,
         RouterModule,
-        FlexLayoutModule,
         MatToolbarModule,
         MatButtonModule,
         MatIconModule,

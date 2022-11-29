@@ -21,6 +21,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        a {
+            margin: 8px;
+        }
         .home-title {
             margin-bottom: 16px;
             text-align: center;
