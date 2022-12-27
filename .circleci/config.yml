@@ -78,24 +78,6 @@ jobs:
                   name: Publish @brightlayer-ui/angular-template-authentication
                   command:   |
                       cd src/app/auth-workflow && yarn publish:package -b $CIRCLE_BRANCH
-    tag:
-        docker:
-            - image: cimg/node:14.19.0-browsers
-        steps:
-            - checkout
-            - gh/setup
-            - run:
-                  name: Tag @brightlayer-ui/angular-template-blank
-                  command:  |
-                      cd src/app/blank && yarn tag:package -b $CIRCLE_BRANCH
-            - run:
-                  name: Tag @brightlayer-ui/angular-template-routing
-                  command:   |
-                      cd src/app/routing && yarn tag:package -b $CIRCLE_BRANCH
-            - run:
-                  name: Tag @brightlayer-ui/angular-template-authentication
-                  command:   |
-                      cd src/app/auth-workflow && yarn tag:package -b $CIRCLE_BRANCH
 workflows:
     version: 2
     angular-cli-templates:
@@ -116,10 +98,4 @@ workflows:
                     branches:
                         only:
                             - master
-            - tag:
-                  requires:
-                      - publish
-                  filters:
-                      branches:
-                          only:
                               - master
