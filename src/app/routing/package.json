@@ -12,7 +12,7 @@
     "description": "Routing template for Angular projects created with the Brightlayer UI CLI.",
     "repository": {
         "type": "git",
-        "url": "https://github.com/brightlayer-ui/angular-cli-templates.git",
+        "url": "https://github.com/etn-ccis/blui-angular-cli-templates.git",
         "directory": "routing"
     },
     "scripts": {
@@ -24,6 +24,6 @@
         "node": ">=10"
     },
     "bugs": {
-        "url": "https://github.com/brightlayer-ui/angular-cli-templates/issues"
+        "url": "https://github.com/etn-ccis/blui-angular-cli-templates/issues"
     }
 }

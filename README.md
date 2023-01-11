@@ -1,18 +1,18 @@
 # Angular CLI Templates
-[![codecov](https://codecov.io/gh/brightlayer-ui/angular-cli-templates/branch/master/graph/badge.svg?token=MHGB0RGXVF)](https://codecov.io/gh/brightlayer-ui/angular-cli-templates)
+[![codecov](https://codecov.io/gh/etn-ccis/blui-angular-cli-templates/branch/master/graph/badge.svg?token=MHGB0RGXVF)](https://codecov.io/gh/etn-ccis/blui-angular-cli-templates)
 
 These are project templates that are used by the Brightlayer UI CLI when starting a new Brightlayer UI project. 
 
 ## Available Templates
 
 ### Blank
-The Blank template provides a bare-bones application with Brightlayer UI components and themes automatically configured and ready to use. This template is available through [npm](https://www.npmjs.com/package/@brightlayer-ui/angular-template-blank) and source code can be found [here](https://github.com/brightlayer-ui/angular-cli-templates/tree/dev/src/app/blank).
+The Blank template provides a bare-bones application with Brightlayer UI components and themes automatically configured and ready to use. This template is available through [npm](https://www.npmjs.com/package/@brightlayer-ui/angular-template-blank) and source code can be found [here](https://github.com/etn-ccis/blui-angular-cli-templates/tree/dev/src/app/blank).
 
 ### Routing
-The Routing template provides all of the essential Brightlayer UI configuration as well as an `app.routing.ts` configuration and a few sample pages. It also adds a navigation Drawer to switch between several sample screens. This template is through [npm](https://www.npmjs.com/package/@brightlayer-ui/angular-template-routing) and source code can be found [here](https://github.com/brightlayer-ui/angular-cli-templates/tree/dev/src/app/routing).
+The Routing template provides all of the essential Brightlayer UI configuration as well as an `app.routing.ts` configuration and a few sample pages. It also adds a navigation Drawer to switch between several sample screens. This template is through [npm](https://www.npmjs.com/package/@brightlayer-ui/angular-template-routing) and source code can be found [here](https://github.com/etn-ccis/blui-angular-cli-templates/tree/dev/src/app/routing).
 
 ### Authentication
-The Authentication template includes everything from the Routing template and also installs and configures the Brightlayer UI [angular-auth-workflow](https://www.npmjs.com/package/@brightlayer-ui/angular-auth-workflow) package to automatically wrap the main application with functions and screens for Login, Registration, Change Password, etc. This template is available through [npm](https://www.npmjs.com/package/@brightlayer-ui/angular-template-authentication-typescript) and the source can be found [here](https://github.com/brightlayer-ui/angular-cli-templates/tree/dev/src/app/auth-workflow).
+The Authentication template includes everything from the Routing template and also installs and configures the Brightlayer UI [angular-auth-workflow](https://www.npmjs.com/package/@brightlayer-ui/angular-auth-workflow) package to automatically wrap the main application with functions and screens for Login, Registration, Change Password, etc. This template is available through [npm](https://www.npmjs.com/package/@brightlayer-ui/angular-template-authentication-typescript) and the source can be found [here](https://github.com/etn-ccis/blui-angular-cli-templates/tree/dev/src/app/auth-workflow).
 
 |                | placeholder landing page | navigation drawer & routing  | login & registration screens  |
 | -------------- | ------------------------ | ---------------------------- | ----------------------------- |
