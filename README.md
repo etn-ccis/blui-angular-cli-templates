@@ -1,5 +1,6 @@
 # Angular CLI Templates
-[![codecov](https://codecov.io/gh/etn-ccis/blui-angular-cli-templates/branch/master/graph/badge.svg?token=MHGB0RGXVF)](https://codecov.io/gh/etn-ccis/blui-angular-cli-templates)
+
+[![](https://img.shields.io/circleci/project/github/etn-ccis/blui-angular-cli-templates/master.svg?style=flat)](https://circleci.com/gh/etn-ccis/blui-angular-cli-templates/tree/master) [![codecov](https://codecov.io/gh/etn-ccis/blui-angular-cli-templates/branch/master/graph/badge.svg?token=MHGB0RGXVF)](https://codecov.io/gh/etn-ccis/blui-angular-cli-templates)
 
 These are project templates that are used by the Brightlayer UI CLI when starting a new Brightlayer UI project. 
 
