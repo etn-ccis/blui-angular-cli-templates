@@ -77,10 +77,10 @@
         "licenseUrl": "https://github.com/angular/angular",
         "parents": "angular-cli-templates"
     },
-    "@brightlayer-ui/angular-auth-workflow@4.0.0": {
+    "@brightlayer-ui/angular-auth-workflow@4.0.1": {
         "licenses": "BSD-3-Clause",
-        "repository": "https://github.com/brightlayer-ui/angular-workflows",
-        "licenseUrl": "https://github.com/brightlayer-ui/angular-workflows",
+        "repository": "https://github.com/etn-ccis/blui-angular-workflows",
+        "licenseUrl": "https://github.com/etn-ccis/blui-angular-workflows",
         "parents": "angular-cli-templates"
     },
     "@brightlayer-ui/angular-components@9.0.0-alpha.1": {
