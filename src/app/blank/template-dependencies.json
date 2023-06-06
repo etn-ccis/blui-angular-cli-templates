@@ -1,10 +1,10 @@
 {
     "dependencies": [
-        "@brightlayer-ui/angular-themes@^8.0.0",
-        "@brightlayer-ui/angular-components@^8.0.0",
-        "@angular/cdk@^14.0.0",
-        "@angular/material@^14.0.0",
-        "@angular/animations@^14.0.0",
+        "@brightlayer-ui/angular-themes@^9.0.0-alpha.6",
+        "@brightlayer-ui/angular-components@^9.0.0-alpha.1",
+        "@angular/cdk@^15.2.9",
+        "@angular/material@^15.2.9",
+        "@angular/animations@^15.2.9",
         "@brightlayer-ui/colors@^3.0.0"
     ]
 }
