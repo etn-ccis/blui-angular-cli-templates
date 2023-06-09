@@ -1,8 +1,8 @@
 {
     "dependencies": [
-        "@brightlayer-ui/angular-themes@^9.0.0-alpha.6",
-        "@brightlayer-ui/angular-components@^9.0.0-alpha.1",
-        "@brightlayer-ui/angular-auth-workflow@^5.0.0-alpha.0",
+        "@brightlayer-ui/angular-themes@^9.0.0-alpha.7",
+        "@brightlayer-ui/angular-components@^9.0.0-alpha.2",
+        "@brightlayer-ui/angular-auth-workflow@^5.0.0-alpha.1",
         "@angular/cdk@^15.2.9",
         "@angular/material@^15.2.9",
         "@angular/animations@^15.2.9",
