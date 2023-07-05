@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import {
     AUTH_ROUTES,
     BluiAuthSecurityService,
-    BluiChangePasswordDialogService, 
+    BluiChangePasswordDialogService,
 } from '@brightlayer-ui/angular-auth-workflow';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { Router } from '@angular/router';
