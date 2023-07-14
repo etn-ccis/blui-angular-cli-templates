@@ -77,19 +77,19 @@
         "licenseUrl": "https://github.com/angular/angular",
         "parents": "angular-cli-templates"
     },
-    "@brightlayer-ui/angular-auth-workflow@5.0.0-alpha.0": {
+    "@brightlayer-ui/angular-auth-workflow@5.0.0": {
         "licenses": "BSD-3-Clause",
         "repository": "https://github.com/etn-ccis/blui-angular-workflows",
         "licenseUrl": "https://github.com/etn-ccis/blui-angular-workflows",
         "parents": "angular-cli-templates"
     },
-    "@brightlayer-ui/angular-components@9.0.0-alpha.1": {
+    "@brightlayer-ui/angular-components@9.0.0": {
         "licenses": "BSD-3-Clause",
         "repository": "https://github.com/etn-ccis/blui-angular-component-library",
         "licenseUrl": "https://github.com/etn-ccis/blui-angular-component-library/raw/master/LICENSE",
         "parents": "angular-cli-templates"
     },
-    "@brightlayer-ui/angular-themes@9.0.0-alpha.6": {
+    "@brightlayer-ui/angular-themes@9.0.0": {
         "licenses": "BSD-3-Clause",
         "repository": "https://github.com/etn-ccis/blui-angular-themes",
         "licenseUrl": "https://github.com/etn-ccis/blui-angular-themes/raw/master/LICENSE",
@@ -101,16 +101,16 @@
         "licenseUrl": "https://github.com/brightlayer-ui/colors/raw/master/LICENSE",
         "parents": "angular-cli-templates"
     },
-    "@brightlayer-ui/icons-svg@1.11.0": {
+    "@brightlayer-ui/icons-svg@1.12.0": {
         "licenses": "BSD-3-Clause",
-        "repository": "https://github.com/brightlayer-ui/icons",
-        "licenseUrl": "https://github.com/brightlayer-ui/icons",
+        "repository": "https://github.com/etn-ccis/blui-icons",
+        "licenseUrl": "https://github.com/etn-ccis/blui-icons/raw/master/LICENSE",
         "parents": "angular-cli-templates"
     },
-    "@brightlayer-ui/icons@1.11.0": {
+    "@brightlayer-ui/icons@2.2.0": {
         "licenses": "BSD-3-Clause",
-        "repository": "https://github.com/brightlayer-ui/icons",
-        "licenseUrl": "https://github.com/brightlayer-ui/icons/raw/master/LICENSE",
+        "repository": "https://github.com/etn-ccis/blui-icons",
+        "licenseUrl": "https://github.com/etn-ccis/blui-icons/raw/master/LICENSE",
         "parents": "angular-cli-templates"
     },
     "@brightlayer-ui/ng-progress-icons@1.2.1": {
@@ -125,7 +125,7 @@
         "licenseUrl": "https://github.com/reactivex/rxjs/raw/master/LICENSE.txt",
         "parents": "angular-cli-templates"
     },
-    "tslib@2.4.1": {
+    "tslib@2.6.0": {
         "licenses": "0BSD",
         "repository": "https://github.com/Microsoft/tslib",
         "licenseUrl": "https://github.com/Microsoft/tslib/raw/master/LICENSE.txt",
