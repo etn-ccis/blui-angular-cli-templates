@@ -17,7 +17,7 @@ import { DrawerModule, EmptyStateModule } from '@brightlayer-ui/angular-componen
 
 //material modules
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
+import { MatLegacyButtonModule as MatButtonModule } from '@angular/material/legacy-button';
 import { MatIconModule } from '@angular/material/icon';
 
 // app
