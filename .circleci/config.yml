@@ -1,13 +1,13 @@
 version: 2.1
 orbs:
     gh: circleci/github-cli@1.0.3
-    codecov: codecov/codecov@1.1.3
+    codecov: codecov/codecov@3.2.2
     browser-tools: circleci/browser-tools@1.2.4
 jobs:
     build_project:
         working_directory: ~/angular-cli-templates
         docker:
-            - image: cimg/node:14.19.0-browsers
+            - image: cimg/node:16.19.1-browsers
         steps:
             - checkout
             - browser-tools/install-browser-tools
@@ -48,17 +48,17 @@ jobs:
     coverage_report:
         working_directory: ~/angular-cli-templates
         docker:
-            - image: cimg/node:14.19.0-browsers
+            - image: cimg/node:16.19.1-browsers
         steps:
             - checkout
             - attach_workspace:
                 at: .
             - codecov/upload:
                 file: './coverage/lcov.info'
-                token: ac5c0a5d-760d-401d-9cbb-a2e8c86a8aaf
+                token: CODECOV_TOKEN
     publish:
         docker:
-            - image: cimg/node:14.19.0-browsers
+            - image: cimg/node:16.19.1-browsers
         steps:
             - checkout
             - run:
@@ -78,24 +78,6 @@ jobs:
                   name: Publish @brightlayer-ui/angular-template-authentication
                   command:   |
                       cd src/app/auth-workflow && yarn publish:package -b $CIRCLE_BRANCH
-    tag:
-        docker:
-            - image: cimg/node:14.19.0-browsers
-        steps:
-            - checkout
-            - gh/setup
-            - run:
-                  name: Tag @brightlayer-ui/angular-template-blank
-                  command:  |
-                      cd src/app/blank && yarn tag:package -b $CIRCLE_BRANCH
-            - run:
-                  name: Tag @brightlayer-ui/angular-template-routing
-                  command:   |
-                      cd src/app/routing && yarn tag:package -b $CIRCLE_BRANCH
-            - run:
-                  name: Tag @brightlayer-ui/angular-template-authentication
-                  command:   |
-                      cd src/app/auth-workflow && yarn tag:package -b $CIRCLE_BRANCH
 workflows:
     version: 2
     angular-cli-templates:
@@ -116,10 +98,4 @@ workflows:
                     branches:
                         only:
                             - master
-            - tag:
-                  requires:
-                      - publish
-                  filters:
-                      branches:
-                          only:
                               - master
