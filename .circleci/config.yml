@@ -2,12 +2,12 @@ version: 2.1
 orbs:
     gh: circleci/github-cli@1.0.3
     codecov: codecov/codecov@3.2.2
-    browser-tools: circleci/browser-tools@1.4.2
+    browser-tools: circleci/browser-tools@1.4.6
 jobs:
     build_project:
         working_directory: ~/angular-cli-templates
         docker:
-            - image: cimg/node:16.19.1-browsers
+            - image: cimg/node:18.17.0-browsers
         steps:
             - checkout
             - browser-tools/install-browser-tools
@@ -48,7 +48,7 @@ jobs:
     coverage_report:
         working_directory: ~/angular-cli-templates
         docker:
-            - image: cimg/node:16.19.1-browsers
+            - image: cimg/node:18.17.0-browsers
         steps:
             - checkout
             - attach_workspace:
@@ -58,7 +58,7 @@ jobs:
                 token: CODECOV_TOKEN
     publish:
         docker:
-            - image: cimg/node:16.19.1-browsers
+            - image: cimg/node:18.17.0-browsers
         steps:
             - checkout
             - run:
