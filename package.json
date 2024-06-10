@@ -14,7 +14,7 @@
     "lint:fix": "eslint \"src/**/**.ts\" --fix",
     "prettier": "prettier \"src/**/**.{ts,js,json,css,scss,html,md}\" --write",
     "prettier:check": "prettier \"src/**/**.{ts,js,json,css,scss,html,md}\" --check",
-    "coverage": "yarn test --no-watch --code-coverage",
+    "coverage": "ng test --browsers=ChromeHeadless --no-watch --code-coverage",
     "generate:licenses": "npm-license-crawler -onlyDirectDependencies -json LICENSES.json",
     "precommit": "yarn && yarn prettier && yarn lint && yarn test:ci && yarn build && yarn generate:licenses"
   },
