@@ -53,7 +53,7 @@ jobs:
       - run: yarn install --immutable
       - run: yarn coverage
       - name: Upload to Codecov
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v4
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           directory: ./coverage/
@@ -74,8 +74,8 @@ jobs:
             BRANCH: ${{ github.ref == 'refs/heads/master' && 'master' || 'dev' }}
         steps:
             - name: Checkout
-              uses: actions/checkout@v2
-            - uses: actions/setup-node@v3
+              uses: actions/checkout@v4
+            - uses: actions/setup-node@v4
               with:
                   node-version: ${{ matrix.node-version }}
                   registry-url: 'https://registry.npmjs.org'
@@ -96,8 +96,8 @@ jobs:
             BRANCH: ${{ github.ref == 'refs/heads/master' && 'master' || 'dev' }}
         steps:
             - name: Checkout
-              uses: actions/checkout@v2
-            - uses: actions/setup-node@v3
+              uses: actions/checkout@v4
+            - uses: actions/setup-node@v4
               with:
                   node-version: ${{ matrix.node-version }}
                   registry-url: 'https://registry.npmjs.org'
@@ -118,8 +118,8 @@ jobs:
             BRANCH: ${{ github.ref == 'refs/heads/master' && 'master' || 'dev' }}
         steps:
             - name: Checkout
-              uses: actions/checkout@v2
-            - uses: actions/setup-node@v3
+              uses: actions/checkout@v4
+            - uses: actions/setup-node@v4
               with:
                   node-version: ${{ matrix.node-version }}
                   registry-url: 'https://registry.npmjs.org'
