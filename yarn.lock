@@ -2906,15 +2906,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/jasmine@*":
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-4.3.2.tgz#27045b95e1249e67ef02c7966e12003fb25df18b"
-  integrity sha512-lKkWBcbxEZX/7nxPqEtv/OjPLaBa2j0o+hmv5Yn83b/+11C1kfBAkgvmrb13WDkmizUJ3B+jYrWh4M0YRtrzEQ==
-
-"@types/jasmine@~3.10.6":
-  version "3.10.8"
-  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-3.10.8.tgz#f2c1f00b309cc509d21063c67c51ec1279894db2"
-  integrity sha512-SQ3vJjPZWIDCzgJP7Ha/GjhgWUxZvpo7vTuLkp6BWJ26tlRK2v26/wi5G0xWw/6Ks10pwyMaCtssB/TazwH/Tg==
+"@types/jasmine@*", "@types/jasmine@~5.1.7":
+  version "5.1.7"
+  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-5.1.7.tgz#b9f68cf05463717bbe36d53221839e7630a24d22"
+  integrity sha512-DVOfk9FaClQfNFpSfaML15jjB5cjffDMvjtph525sroR5BEAW2uKnTOYUTqTFuZFjNvH0T5XMIydvIctnUKufw==
 
 "@types/jasminewd2@~2.0.13":
   version "2.0.13"
